@@ -1,0 +1,1 @@
+ExpandAll("open"); parent.frames["body"].focus(); parent.frames["body"].print();

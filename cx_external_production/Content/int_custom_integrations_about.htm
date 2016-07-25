@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="help_central.xml" data-mc-path-to-help-system="../" data-mc-conditions="gc_cx_conditions.shared" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Storefront|Integrations|Custom Integrations" data-mc-ignored-words="www.digitalriver.com;digitalriver.com;digitalriver;gcsupport">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>About Custom Integrations</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="Resources/Stylesheets/gc_cx_stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="body">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix"> </span><span class="MCBreadcrumbsSelf">Storefront</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Integrations</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Custom Integrations</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">About Custom Integrations</span>
+            </div>
+            <h1><a name="kanchor237"></a><a name="aanchor242"></a>
+                <MadCap:concept term="Key Generator;Custom Integrations;Integrations" />About Custom Integrations</h1>
+            <p>An integration is something that connects one system (such as <span class="gc_cx_variablesPlatformName3" data-mc-conditions="gc_cx_conditions.cx_external">(Undefined variable: gc_cx_variables.PlatformName3)</span>)&#160;with another system so that the two can transmit or share data between each other. </p>
+            <p>The Custom Integration feature allows you to create an integration between <span class="gc_cx_variablesPlatformName3" data-mc-conditions="gc_cx_conditions.cx_external">(Undefined variable: gc_cx_variables.PlatformName3)</span> and a digital rights management (DRM) system. DRM systems can store, deliver, and/or manage serial numbers and unlock codes for products.</p>
+            <p>Custom integrations are different than other integrations you might have on your store because custom integrations are created and managed by you within the Command Console. Other types of integrations rely on Digital River to do some work and set up for the integration to function as expected. Custom integrations can be created and managed solely by you, the client.</p>
+            <p class="note_note"><b>Note</b>: Custom Integrations is only available if your store is using the Self Service (Rivulet) template. To find out what template your store uses, contact your Store Operations Team.</p>
+            <h2>Before You Create a Custom Integration</h2>
+            <p>Before you create and use a custom integration you must make sure that the system you want to handle the integration requests from <span class="gc_cx_variablesPlatformName3" data-mc-conditions="gc_cx_conditions.cx_external">(Undefined variable: gc_cx_variables.PlatformName3)</span> is set up and tested to ensure it is working correctly. When you create an integration you enter the URL&#160;of the system where the request should be sent, so if the system isn't functioning the custom integration will not work. </p>
+            <p>We also recommend that you familiarize yourself with the XML&#160;schema for key requests and key revocations that can be found in the Integration Services Guide. The schema will help you determine what data your DRM&#160;system will need to send  and how those requests should be structured. To gain access to the <i>Integration Services Guide</i>, contact your Store Operations Team.</p>
+            <h2>Type of Integrations You Can Create</h2>
+            <p>There are two types of custom integrations you can create and then associate with products to deliver and manage digital rights. You can create as many of these integrations as needed to satisfy your digital rights needs. To learn how to create a custom integration, see <a href="int_custom_integrations_create.htm" title="" alt="" class="MCXref xref"><b>Creating Custom Integrations</b></a>.</p>
+            <ul>
+                <li value="1"><b>Key Request</b> – Requests a serial number or unlock code when a purchase is made.</li>
+                <li value="2"><b>Key Revocation</b> – Revokes a key that has already been delivered to the shopper. To learn how to set up what triggers a key to be revoked, see <a href="cmp_configure_company_settings_key_revoke_reasons.htm" title="" alt="" class="MCXref xref"><b>Configuring When Key Revocations Occur</b></a>.</li>
+            </ul>
+            <h2>Using Your Custom Integrations</h2>
+            <p>Custom integrations are created to deliver and manage digital rights for products. There are two different types of integrations you can create (key requests and key revocations) and so two different ways those integrations are used on your store. </p>
+            <p class="note_note"><b>Note</b>: By default, when you create a custom integration it is enabled (made active) for your store. You can disable any custom integrations you no longer use or want to temporarily stop using. To learn how to enable or disable custom integrations, see <a href="int_custom_integrations_enable_disable.htm" title="" alt="" class="MCXref xref"><b>Enabling and Disabling Custom Integrations</b></a>.</p>
+            <h3>Using Key Requests with Your Products</h3>
+            <p>Once you create (and enable) a key request custom integration, you can then use that custom integration to deliver keys for products purchased on your site. You do not have to use the key request custom integration for all your products that use digital rights; you can use the custom integration on as many or as few as you need. </p>
+            <p>Your key request custom integrations can only be used for a product when the digital rights <b>Generation Method</b> is set to <b>External</b>. Once this is set you will then see the custom integration(s) you have created in a list of available integrations.</p>
+            <p>The picture below shows where in the <i>Configure Digital Rights Management</i> window you will see your custom integrations (you see the same on both the <b>Serial Numbers</b> and <b>Unlock Codes</b> tabs). </p>
+            <p>
+                <img src="Resources/Images/custom_integrations1.jpg" />
+            </p>
+            <h3>Configuring when Key Revocations Occur</h3>
+            <p>Once you create a key revocation custom integration you can configure when that integration should be triggered and used (see <a href="cmp_configure_company_settings_key_revoke_reasons.htm" title="" alt="" class="MCXref xref"><b>Configuring When Key Revocations Occur</b></a>). </p>
+            <p>A key revocation integration revokes a key that has already been distributed for a product and can be revoked for one or more of the following reasons:</p>
+            <ul>
+                <li value="1">Product or order is refunded.</li>
+                <li value="2">Product or order is disputed – A dispute happens when a shopper calls the issuer of the payment (credit card company, payment institution, etc.)&#160;and disputes the charge on their account. Disputes may occur because the shopper didn't authorize the charge, or because the shopper cannot contact the seller to get a refund when they have a problem with the order or product.</li>
+                <li value="3">Settlement is declined – Some payment methods do an "immediate" authorization of the payment that doesn't actually collect the payment or verify the payment can be made. In these cases, authorization may be gained and fulfillment will begin (including fulfillment of the digital rights) before payment is collected. If the issuer then denies the payment, the settlement for the order will be declined and a revoke will be triggered.</li>
+                <li value="4">Order is marked as fraud.</li>
+            </ul>
+            <p>&#160;</p>
+            <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="Key Generator;Custom Integrations;Integrations" href="javascript:void(0);" data-mc-topics="About Custom Integrations|#aanchor242||About Integration Exceptions|int_integration_exceptions_about.htm#aanchor247||Configuring When Key Revocations Occur|cmp_configure_company_settings_key_revoke_reasons.htm#aanchor245||Creating Custom Integrations|int_custom_integrations_create.htm#aanchor243||Enabling and Disabling Custom Integrations|int_custom_integrations_enable_disable.htm#aanchor244||Managing Integration Exceptions|int_integration_exceptions_manage.htm#aanchor248||Viewing History for a Custom Integration|int_custom_integrations_view_history.htm#aanchor246"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />Related Topics</span></a>
+            </p>
+            <p>&#160;</p>
+        </div>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: center;">&#160;</p>
+        <hr color="#005ba8" width="100%" size="0" align="center" />
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">© 2014 Digital River, Inc. </p>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">Digital River® is a registered trademark of Digital River, Inc. | <a href="http://www.digitalriver.com/" target="_blank">www.digitalriver.com</a></p>
+        <script src="Resources/fireclick.js">
+        </script>
+        <script type="text/javascript">/* <![CDATA[ */
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+/* ]]> */</script>
+        <script type="text/javascript">/* <![CDATA[ */
+try {
+var pageTracker = _gat._getTracker("UA-10899220-1");
+pageTracker._trackPageview();
+} catch(err) {}/* ]]> */</script>
+        <script src="Resources/MasterPages/highlighter.js">
+        </script>
+        <script>/* <![CDATA[ */doSearch();/* ]]> */</script>
+    </body>
+</html>

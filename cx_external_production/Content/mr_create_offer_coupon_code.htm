@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="help_central.xml" data-mc-path-to-help-system="../" data-mc-conditions="gc_cx_conditions.shared" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Marketing|Offers and POPs|Coupon Code Offers" data-mc-ignored-words="www.digitalriver.com;digitalriver.com;digitalriver;gcsupport">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Creating Coupon Code Offers</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="Resources/Stylesheets/gc_cx_stylesheet.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/gc_cx_tablestyles.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/for_dropdowntext.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="body">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix"> </span><span class="MCBreadcrumbsSelf">Marketing</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Offers and POPs</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Coupon Code Offers</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Creating Coupon Code Offers</span>
+            </div>
+            <h1><a name="kanchor344"></a><a name="aanchor348"></a>
+                <MadCap:concept term="Offers;Offers Coupon Codes" />Creating Coupon Code Offers</h1>
+            <p>Coupon code offers provide discounts on products or shipping costs when a shopper enters a coupon code during checkout.</p>
+            <p>This topic explains the settings specific to coupon code offers, including how to add or manage coupon codes after an offer is created. We recommend you use this topic in conjunction with the <a href="mr_create_edit_offer.htm" class="MCXref xref"><b>Creating Marketing Offers</b></a> topic if you want to create a coupon code offer. </p>
+            <h2>Selecting the Coupon Code Trigger</h2>
+            <p>In order to create a coupon code offer, you must select the <a href="mr_about_offer_triggers_coupon_code.htm">coupon code trigger</a> in the first step of the <i>Create Offer</i> wizard. Keep in mind that the coupon code trigger can only be used with <a href="mr_about_offer_triggers_coupon_code.htm#OffersThatCanUseCouponCodes">specific offer types</a>. </p>
+            <p>
+                <img src="Resources/Images/offer_triggers3_663x209.jpg" style="width: 663;height: 209;" />
+            </p>
+            <h2>Choosing How to Get Codes for Your Offer</h2>
+            <p>In the second step (the <i>Behavior</i> step) you will see the <i>Coupon Codes</i> area where you select how you want to add/generate coupon codes for your offer. </p>
+            <p>
+                <img src="Resources/Images/coupon_codes4.jpg" />
+            </p>
+            <ul>
+                <li class="disc" value="1"><b>Enter Coupon Codes</b> – You type/enter the coupon code(s) you want to use (for example "25%off"). </li>
+                <li class="disc" value="2"><b>Generate Coupon Codes</b> – The system generates a set of random coupon codes based on some parameters you define. System generated codes are always nine (9) digits long. </li>
+                <li class="disc" value="3"><b>Range</b> – The system generates a range of coupon codes. The codes can have a specific prefix and you can specify the first, and/or last number you want to use for the range.</li>
+                <li class="disc" value="4"><b>Import Coupon Codes</b> – You import a .txt file that contains coupon codes you have created or generated elsewhere.</li>
+            </ul>
+            <p class="note_note"><b>Note</b>:&#160;Technically there is no limit on the number of coupon codes you can associate with an offer, just a limit on the number of codes you can import or generate at any single time. If you need more codes for your offer you should perform multiple imports or generate multiple sets of codes.</p>
+            <h2><a name="LimitCouponCodeUsage"></a>Limiting Coupon Code Usage</h2>
+            <p>After you select a generation method, choose whether you want to limit the use of individual coupon codes. This only limits the number of times each code can be used. If you want to limit the use of the offer itself (for example, how many times the offer can be redeemed on your store) use the <a href="mr_create_edit_offer.htm#OfferControls">Offer Controls</a>.</p>
+            <p>
+                <img src="Resources/Images/coupon_codes3.jpg" />
+            </p>
+            <ul>
+                <li value="1">Select the <b>Limit Individual Coupon Usage</b> check box to limit the number of times a single coupon can be used. Then enter the number of times each code can be used in the <b>Coupon Limit</b> field that appears.</li>
+            </ul>
+            <h2>Coupon Code POP</h2>
+            <p>Offers that use the coupon code trigger <u>must</u> use the "PointOfSale_CouponEntryField" POP for the coupon code field to appear in the shopping cart. If the offer is not set up with this POP, the field where shoppers enter the code will not appear. If the coupon code POP&#160;is not available as an option when you are creating the offer it means that POP&#160;has not been associated with that offer type. See <a href="mr_configure_offer_types.htm" class="MCXref xref"><b>Configuring Offer Types</b></a> for more information.</p>
+            <h2>Adding Coupon Codes to the Offer</h2>
+            <p>When you reach the last step of the wizard (the <i>Review</i> step) you will see an option at the bottom of the page to indicate whether you want to set up the coupon codes for the offer now or later. </p>
+            <p>
+                <img src="Resources/Images/coupon_codes1.jpg" />
+            </p>
+            <p>We recommend you select <b>Yes</b> to add coupon codes immediately after you finish the wizard, and then click <b>Finish</b> to move to the step where you add coupon codes. (When you click <b>Finish</b>, you will be prompted to choose if you want to deploy the offer. We recommend you do not deploy the offer until after you have set up coupon codes.) If you choose not to add coupon codes now, when you return to the offer and view it, you can use the steps below to add coupon codes to the offer.</p>
+            <p>Once you finish the wizard (or view an offer with the coupon code trigger) you will see the <i>Offer Details</i> page. In the <i>Behavior</i> area, click <b>Add</b>. A window appears where you can add or generate coupon codes for the offer, depending on the generation method you chose. </p>
+            <p>
+                <img src="Resources/Images/offer_coupon_codes1_651x391.jpg" style="width: 651;height: 391;" />
+            </p>
+            <p>Use the steps below to add coupon codes to the offer depending on your generation method. When you are done, click&#160;<b>Done</b> at the bottom of the page to complete the coupon code setup.</p>
+            <p style="font-weight: bold;">If you chose the "Enter Coupon Codes" generation method:</p>
+            <ul>
+                <li class="disc" value="1">In the <b>Codes</b> field, enter the coupon codes that shoppers can use to redeem the offer and click <b>Save</b>. </li>
+            </ul>
+            <table style="width: 100%;margin-left: 50px;margin-right: auto;mc-table-style: url('Resources/TableStyles/for_dropdowntext.css');" class="TableStyle-for_dropdowntext" cellspacing="0">
+                <col class="Column-Column1" />
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyA-Column1-Body1">
+                            <p style="font-weight: bold;">Guidelines for creating your own coupon codes:</p>
+                            <ul>
+                                <li value="1">Codes must be less than or greater than nine characters (nine characters are reserved for system generated codes) but no more than 64 characters in length. Keep in mind that shoppers will need to enter the code to redeem the offer so we recommend you keep your codes as short as possible.</li>
+                                <li value="2">Use commas to separate individual coupon codes, but do not use commas in the coupon codes themselves. A comma in a coupon code is treated as a line break. For example, if you enter "123,456" it would be interpreted as two codes ("123" and "456"). Similarly, if a shopper entered "123,456" in the coupon code field it would be interpreted as two different codes ("123" and "456").</li>
+                                <li value="3">Do not use spaces to separate individual coupon codes, or within the codes themselves. We do not recommend using spaces in coupon codes because it may lead to errors when the shopper is copying and pasting the coupon code during checkout, or in how the coupon code will display in an email or social media post. </li>
+                                <li value="4">Coupon codes can use special characters such as ! or &amp; or %. You can use any standard symbol (on an English/United States keyboard) in your coupon codes, with the exception of commas as mentioned above. </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-weight: bold;">If you chose the "Generate Coupon Codes" generation method : </p>
+            <ul>
+                <li class="disc" value="1">In the <b>Quantity</b> field, enter the number of codes you want the system to generate for the offer. Codes will be generated using an algorithm developed by Digital River and will be nine characters in length.</li>
+                <li class="disc" value="2">You can generate up to two million codes at any one time. We recommend you generate codes multiple times if you need more than two million codes for your offer.</li>
+            </ul>
+            <p style="font-weight: bold;">If you selected "Range" generation method: </p>
+            <ol>
+                <li value="1"> In the <b>Prefix</b> field, enter the prefix that you want to appear at the beginning of each  code. Prefixes can be letters and/or numbers only with  no spaces or special symbols. </li>
+                <li value="2">In the <b>Start</b> field, enter the first number for the range. Your range of coupon codes will begin with this number. </li>
+                <li value="3">In the <b>End</b> field, enter the last number for the range. Your range of coupon codes will end with this number. </li>
+            </ol>
+            <table class="TableStyle-for_dropdowntext" style="margin-left: 0;margin-right: auto;caption-side: top;mc-table-style: url('Resources/TableStyles/for_dropdowntext.css');" cellspacing="0">
+                <col class="Column-Column1" />
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyA-Column1-Body1"><b>Example</b>: Here is how a range of codes  would look if you specified a <b>Prefix</b> of <span style="font-style: italic;">FreeShip</span>, a <b>Start</b> of <span style="font-style: italic;">10</span>, and an <b>End</b> of <span style="font-style: italic;">15</span>: FreeShip10, FreeShip11, FreeShip12, FreeShip13, FreeShip14, FreeShip15</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-weight: bold;">If you selected "Import Coupon Codes" generation method: </p>
+            <p style="font-weight: bold;">
+                <img src="Resources/Images/offer_coupon_codes2.jpg" />
+            </p>
+            <ul>
+                <li class="disc" value="1">Click <span style="font-weight: bold;">Browse</span> to select the .txt file containing the coupon codes you want to import. <a href="Resources/sample_coupon_code_import_file.txt" target="_blank">Click here to see an example of an import file</a>. </li>
+                <li class="disc" value="2">Import files are limited to one million codes. We have found that files with more than a million codes can have problems importing. We recommend you do multiple imports if you need more than one million coupon codes for your offer.</li>
+            </ul>
+            <table style="width: 100%;margin-left: 50px;margin-right: auto;mc-table-style: url('Resources/TableStyles/for_dropdowntext.css');" class="TableStyle-for_dropdowntext" cellspacing="0">
+                <col class="Column-Column1" />
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyA-Column1-Body1">
+                            <p style="font-weight: bold;">Guidelines for creating your own coupon codes:</p>
+                            <ul>
+                                <li value="1">Codes must be less than or greater than nine characters (nine characters are reserved for system generated codes) but no more than 64 characters in length. Keep in mind that shoppers will need to enter the code to redeem the offer so we recommend you keep your codes as short as possible.</li>
+                                <li value="2">Use commas to separate individual coupon codes, but do not use commas in the coupon codes themselves. A comma in a coupon code is treated as a line break. For example, if you enter "123,456" it would be interpreted as two codes ("123" and "456"). Similarly, if a shopper entered "123,456" in the coupon code field it would be interpreted as two different codes ("123" and "456").</li>
+                                <li value="3">Do not use spaces to separate individual coupon codes, or within the codes themselves. We do not recommend using spaces in coupon codes because it may lead to errors when the shopper is copying and pasting the coupon code during checkout, or in how the coupon code will display in an email or social media post. </li>
+                                <li value="4">Coupon codes can use special characters such as ! or &amp; or %. You can use any standard symbol (on an English/United States keyboard) in your coupon codes, with the exception of commas as mentioned above. </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&#160;</p>
+            <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="Offers Coupon Codes" href="javascript:void(0);" data-mc-topics="About Offer Triggers: Coupon Code|mr_about_offer_triggers_coupon_code.htm#aanchor327||About Offer Triggers: Coupon Code|mr_offer_triggers_coupon_code_about.htm#aanchor512||Creating Coupon Code Offers|#aanchor348||Retiring Offers|mr_retire_offer.htm#aanchor361||Viewing Coupon Code Usage for Offers|mr_viewing_code_usage_for_offers.htm#aanchor349"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />Related Topics</span></a>
+            </p>
+            <p>&#160;</p>
+        </div>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: center;">&#160;</p>
+        <hr color="#005ba8" width="100%" size="0" align="center" />
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">© 2014 Digital River, Inc. </p>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">Digital River® is a registered trademark of Digital River, Inc. | <a href="http://www.digitalriver.com/" target="_blank">www.digitalriver.com</a></p>
+        <script src="Resources/fireclick.js">
+        </script>
+        <script type="text/javascript">/* <![CDATA[ */
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+/* ]]> */</script>
+        <script type="text/javascript">/* <![CDATA[ */
+try {
+var pageTracker = _gat._getTracker("UA-10899220-1");
+pageTracker._trackPageview();
+} catch(err) {}/* ]]> */</script>
+        <script src="Resources/MasterPages/highlighter.js">
+        </script>
+        <script>/* <![CDATA[ */doSearch();/* ]]> */</script>
+    </body>
+</html>

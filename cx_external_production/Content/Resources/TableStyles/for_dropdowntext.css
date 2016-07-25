@@ -1,0 +1,464 @@
+/* MadCap Table Style: */
+
+/*<meta Version="7" />*/
+
+mcTableStyle
+{
+	name: for_dropdowntext;
+	border-collapse: collapse;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #005ba8;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #005ba8;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #005ba8;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #005ba8;
+	cell-padding-left: 10px;
+	cell-padding-right: 30px;
+	cell-padding-top: 10px;
+	cell-padding-bottom: 10px;
+	border-spacing-y: 0;
+	border-spacing-x: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	max-id: 3;
+}
+
+mcTableColumnStyle
+{
+	span: 1;
+	name: Column1;
+	id: 0;
+}
+
+mcTableHeadStyle
+{
+	span: 1;
+	name: Header1;
+	id: 2;
+}
+
+mcTableBodyStyle
+{
+	span: 1;
+	font-weight: normal;
+	name: Body1;
+	id: 1;
+}
+
+mcTableFootStyle
+{
+	span: 1;
+	name: Footer1;
+	id: 3;
+}
+
+
+/* Cell Styles: */
+ 
+.TableStyle-for_dropdowntext
+{
+	border-collapse: collapse;
+	border-left-style: solid;
+	border-left-color: #005ba8;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-color: #005ba8;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-color: #005ba8;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #005ba8;
+	border-bottom-width: 1px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-spacing: 0px 0px;
+}
+
+.TableStyle-for_dropdowntext .Column-Column1
+{
+	
+}
+
+.TableStyle-for_dropdowntext .Head-Header1
+{
+	
+}
+
+.TableStyle-for_dropdowntext .HeadI-Column1-Header1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-for_dropdowntext .HeadI-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-for_dropdowntext .HeadE-Column1-Header1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-for_dropdowntext .HeadE-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-for_dropdowntext .HeadF-Column1-Header1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-for_dropdowntext .HeadF-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-for_dropdowntext .HeadH-Column1-Header1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-for_dropdowntext .HeadH-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-for_dropdowntext .HeadD-Column1-Header1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-for_dropdowntext .HeadD-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-for_dropdowntext .HeadC-Column1-Header1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-for_dropdowntext .HeadC-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-for_dropdowntext .HeadB-Column1-Header1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-for_dropdowntext .HeadB-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-for_dropdowntext .HeadA-Column1-Header1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-for_dropdowntext .HeadA-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-for_dropdowntext .HeadG-Column1-Header1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-for_dropdowntext .HeadG-Column1-Header1 p
+{
+	
+}
+
+.TableStyle-for_dropdowntext .Foot-Footer1
+{
+	
+}
+
+.TableStyle-for_dropdowntext .FootI-Column1-Footer1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-for_dropdowntext .FootI-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-for_dropdowntext .FootE-Column1-Footer1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-for_dropdowntext .FootE-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-for_dropdowntext .FootF-Column1-Footer1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-for_dropdowntext .FootF-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-for_dropdowntext .FootH-Column1-Footer1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-for_dropdowntext .FootH-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-for_dropdowntext .FootD-Column1-Footer1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-for_dropdowntext .FootD-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-for_dropdowntext .FootC-Column1-Footer1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-for_dropdowntext .FootC-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-for_dropdowntext .FootB-Column1-Footer1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-for_dropdowntext .FootB-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-for_dropdowntext .FootA-Column1-Footer1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-for_dropdowntext .FootA-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-for_dropdowntext .FootG-Column1-Footer1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-for_dropdowntext .FootG-Column1-Footer1 p
+{
+	
+}
+
+.TableStyle-for_dropdowntext .Body-Body1
+{
+	
+}
+
+.TableStyle-for_dropdowntext .BodyI-Column1-Body1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: normal;
+}
+
+.TableStyle-for_dropdowntext .BodyI-Column1-Body1 p
+{
+	font-weight: normal;
+}
+
+.TableStyle-for_dropdowntext .BodyE-Column1-Body1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: normal;
+}
+
+.TableStyle-for_dropdowntext .BodyE-Column1-Body1 p
+{
+	font-weight: normal;
+}
+
+.TableStyle-for_dropdowntext .BodyF-Column1-Body1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: normal;
+}
+
+.TableStyle-for_dropdowntext .BodyF-Column1-Body1 p
+{
+	font-weight: normal;
+}
+
+.TableStyle-for_dropdowntext .BodyH-Column1-Body1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: normal;
+}
+
+.TableStyle-for_dropdowntext .BodyH-Column1-Body1 p
+{
+	font-weight: normal;
+}
+
+.TableStyle-for_dropdowntext .BodyD-Column1-Body1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: normal;
+}
+
+.TableStyle-for_dropdowntext .BodyD-Column1-Body1 p
+{
+	font-weight: normal;
+}
+
+.TableStyle-for_dropdowntext .BodyC-Column1-Body1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: normal;
+}
+
+.TableStyle-for_dropdowntext .BodyC-Column1-Body1 p
+{
+	font-weight: normal;
+}
+
+.TableStyle-for_dropdowntext .BodyB-Column1-Body1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: normal;
+}
+
+.TableStyle-for_dropdowntext .BodyB-Column1-Body1 p
+{
+	font-weight: normal;
+}
+
+.TableStyle-for_dropdowntext .BodyA-Column1-Body1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: normal;
+}
+
+.TableStyle-for_dropdowntext .BodyA-Column1-Body1 p
+{
+	font-weight: normal;
+}
+
+.TableStyle-for_dropdowntext .BodyG-Column1-Body1
+{
+	padding-left: 10px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: normal;
+}
+
+.TableStyle-for_dropdowntext .BodyG-Column1-Body1 p
+{
+	font-weight: normal;
+}
+
+

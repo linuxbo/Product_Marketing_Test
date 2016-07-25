@@ -1,0 +1,40 @@
+<page:element type="page">
+  <div id="dr_CategoryProductList" class="dr_Content dr_category_{categoryID}">
+    <page:element type="categoryBanner"/>
+    <page:element type="categoryHeader"/>
+    <page:element type="categoryImage"/>
+    <page:element type="categoryLongDescription"/>
+
+    <page:element type="catSortOptions"/> <!-- optional, sort by and results per page selections -->
+    <page:element type="compareContainer"/> <!-- optional, compare widget -->
+    <page:element type="products">
+      <page:element type="pagination"/>
+      <ul id="dr_products">
+        <page:attribute name="data-totalSize">
+          <get:value data="totalSize"/>
+        </page:attribute>
+        <page:attribute name="data-resultSize">
+          <get:value data="resultSize"/>
+        </page:attribute>
+        <loop:each list="products">
+          <page:element type="product">
+            <li>
+              <page:attribute name="class">dr_product dr_pid
+                <get:value data="productID"/>
+              </page:attribute>
+              <page:element type="thumbnail"/>
+              <page:element type="productDetailsLink"/>
+              <page:element type="shortDescription"/>
+              <page:element type="price"/>
+              <page:element type="preOrderLink"/>
+              <page:element type="buyLink"/>
+              <page:element type="compareCheckbox"/> <!-- optional, compare widget -->
+            </li>
+          </page:element>
+        </loop:each>
+      </ul>
+      <page:element type="pagination"/>
+      <page:element type="compareJS"/> <!-- required only for compare widget -->
+    </page:element>
+  </div>
+</page:element>

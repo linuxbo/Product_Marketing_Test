@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="help_central.xml" data-mc-path-to-help-system="../" data-mc-conditions="gc_cx_conditions.shared" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Catalog|Products|Creating Products|Digital Rights" data-mc-ignored-words="www.digitalriver.com;digitalriver.com;digitalriver;gcsupport">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>About the Digital Rights Option</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="Resources/Stylesheets/gc_cx_stylesheet.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/gc_cx_tablestyles.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/for_dropdowntext.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/no_border.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="body">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix"> </span><span class="MCBreadcrumbsSelf">Catalog</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Products</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Creating Products</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Digital Rights</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">About the Digital Rights Option</span>
+            </div>
+            <h1><a name="kanchor123"></a><a name="aanchor126"></a>
+                <MadCap:concept term="Products Options;Digital Rights;Unlock Codes;Serial Numbers" />About the Digital Rights Option</h1>
+            <p>The Digital Rights option is used to enable (and manage) the serial numbers and unlock codes you want to use to control access to software and other digital products. You can set up serial numbers and unlock codes on a product-by-product basis and define how those digital rights are enforced when the product is purchased from your site. </p>
+            <p class="note_note"><b>Note</b>:&#160;When you enable Digital Rights for a product, you can choose to use Digital River for authentication of those digital rights, or use a third&#8209;party to verify the digital rights for your products. The information in this file only applies to Digital Rights provided by Digital River. To learn how to create an integration with your system to deliver and revoke serial numbers or unlock codes, see <a href="int_custom_integrations_about.htm" title="" alt="" class="MCXref xref"><b>About Custom Integrations</b></a>.</p>
+            <p>There are multiple ways you can get digital rights into the system for your products. You can have the Command Console generate codes for you and define certain parameters for those codes.&#160;You can import codes in a text file or manually enter codes for your products. </p>
+            <p class="note_note"><b>Note</b>:&#160;Digital River has many DRM solutions that you may find useful or appropriate for your products. Please contact your Store Operations team for more information about the DRM services, products, and technologies we have to offer.</p>
+            <h2>What are Serial Numbers and Unlock Codes?</h2>
+            <p>There are two ways you can protect your products from unauthorized access or use: serial numbers and unlock codes. A product can use both types, or only one depending on your need.</p>
+            <ul>
+                <li value="1"><b>Serial Number</b> – Code that a shopper must enter during installation for the product to install correctly. </li>
+            </ul>
+            <p class="note_note_indent"><b>Note</b>: If your company uses Digital River Software Passport for digital rights, the unlock codes option will have additional features not supported with serial numbers. Contact your Store Operations team for more information.</p>
+            <ul>
+                <li value="1"><b>Unlock Code</b> – Code that a shopper enters when they first start/open the product (after it has been installed) to allow them access to the product. </li>
+            </ul>
+            <p>Serial numbers and unlock codes are essentially the same and you may find that you want to use both on your products. This means one code or key would be required for installing, downloading, or saving the product executable and another key or code would be required for using or opening the product. </p>
+            <h2>Importing Digital Rights Codes</h2>
+            <p>The codes used by digital rights are imported to the system using a text file (.txt) that contains the individual codes for the product. Because codes are attached to a specific product or variation of a product, you could potentially use the same code with two different products (or variations of a product). </p>
+            <h3>Creating the Text File</h3>
+            <p>When you create the text file of your codes, there are a few rules to keep in mind. The following list outlines these rules and contains helpful information for creating your digital rights codes:</p>
+            <ul>
+                <li value="1">Each code must be entered a new line. </li>
+                <li value="2">Codes can contain special characters and spaces, with the exception of the asterisk character. The asterisk (or "*") will force a line break in the imported file. This means that if you enter "ABC*123" on one line, it will be broken into two lines/codes: "ABC" and "123" respectively. </li>
+                <li value="3">Duplicated codes are removed from the file upon import. </li>
+            </ul>
+            <h2>Controlling Code Usage</h2>
+            <p>When you are setting up the digital rights options, you choose how codes will be "generated" or distributed for the product. You can specify if all sales of a product will use the same code, or if each sale of a product will use a unique code. This allows you to control how often a code can be used to release the DRM for a product. </p>
+            <p>There are two different ways you can generate or distribute codes for a product, as explained below:</p>
+            <ul>
+                <li value="1"><b>Fixed Number</b> – This method is used when all sales for the product will use the same exact code. This means that if two different shoppers purchase a product, each shopper will use the exact same code to release the DRM.</li>
+                <li value="2"><b>Manual List</b> – This method is used when each sale of the product will use a unique code. When you use this generation method you will also have to choose if you want each quantity of the product in the same order to use a different code or if all quantities of a product within the same order to use the same code. </li>
+            </ul>
+            <h2>Editing Digital Rights for Deployed Products</h2>
+            <p>Once a product with digital rights has been deployed, you cannot change the digital rights options until the product is back in design status. This is to protect the digital rights from being inadvertently changed on deployed product. For more about product statuses, <a href="prd_product_status_about.htm" title="" alt="" class="MCXref xref"><b>About Product Status</b></a>.</p>
+            <h2>Managing the Digital Rights Inventory</h2>
+            <p>After you set up digital rights for a product, you will want to monitor the inventory of serial numbers and/or unlock codes and replenish that inventory as necessary. We’ve made this process easier by providing you a way to be notified when the inventory of your digital rights runs low. We’ve also allowed you to see how many codes are remaining/unused for a product when viewing the Digital Rights overlay. </p>
+            <h3>Being Notified When Inventory Runs Low</h3>
+            <p>When digital rights are first set up for a product, you must enter an email address so that you (or someone else) can be notified when the inventory of codes begins to get low. In fact, you define when you want to be notified, and how often after that you want to be reminded that your digital rights inventory is running low.</p>
+            <h3>Adding New Codes</h3>
+            <p>You can add codes to products even when they are deployed. You simply return to the product and add codes as you did when you first set up the product for digital rights. The codes you add can replace the list/set of codes currently associated with the product or they can just be added to the list. </p>
+            <h3>What Happens if a Product Runs Out of Codes</h3>
+            <p>If a product is sold but there are no codes left to send to the shopper, the email shoppers are sent that includes the code will not have a code (the space where the code appears is blank). </p>
+            <h3>Code Limits on Products</h3>
+            <p>Technically there is no limit to the number of codes you can attach to a product. If you want a product to have one million codes associated to it you can do that. There are some limits, however, to the size of the files you can upload with codes but that is mostly due to performance and the amount of time it takes to import large files of codes.</p>
+            <h2>Digital Rights and Variations</h2>
+            <p>Digital rights can be set for specific variations or set for the base product, which would copy down to all variations. For example, if you set up digital rights at the variation level, you could have different serial numbers or unlock codes for both the Mac and PC variations of your product. If you set up digital rights at the base product level, the same digital rights options (and codes) will be used by all variations of the product. </p>
+            <p class="note_note"><b>Note</b>:&#160;Keep in mind that if you use variation-specific digital rights, the product will not revert to the base product’s digital rights if the variation runs out of serial numbers/unlock codes. It is very important to keep a supply of serial numbers/unlock codes for each product and variation.</p>
+            <h2>How Digital Rights Work for Shoppers</h2>
+            <p>When a shopper places an order for a product that has digital rights enabled, your store works with the Command Console to supply the shopper with the code(s) they need based on the DRM settings for the product.</p>
+            <p>Codes can be given to shoppers on the Thank You page they see when their order is placed, or in the Order Confirmation email that is sent when their order and payment have been processed. </p>
+            <p>Once a shopper gets their code(s), they then enter those code(s) during the installation or use of the product.</p>
+            <h3>Digital Rights and Renewal Products</h3>
+            <p>When a product is a renewable product (for example, when the product is a subscription) you can have the digital rights reset, thus forcing the shopper to enter a new code(s), or you can allow the product to continue using the existing code(s) as it was prior to renewal.</p>
+            <p>When you enable digital rights on renewals, shoppers are sent a Renewal Confirmation email when their product successfully renews. In that email will be the new serial number and/or unlock code for the product. </p>
+            <p>If digital rights are not enabled for renewals, shoppers will not have to enter any new codes and won’t notice any change upon renewal. </p>
+            <h2>Viewing Digital Rights for a Fulfilled (Sold) Product</h2>
+            <p>Once a product has been sold, you can view the digital rights that were given to the shopper by looking up the order in Customer Service. From there you can see which codes were sent. In some cases, you can "resend" the digital rights if the shoppers has lost their code.</p>
+            <p>&#160;</p>
+            <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="Digital Rights" href="javascript:void(0);" data-mc-topics="About the Digital Rights Option|#aanchor126||Configuring Digital Rights|prd_edit_product_configuring_digital_rights.htm#kanchor113||Configuring Serial Numbers|prd_product_options_digital_right_serial_numbers_configure.htm#aanchor526||Configuring Serial Numbers|prd_product_options_digital_rights_serial_numbers_configure.htm#aanchor129||Configuring Unlock Codes|prd_product_options_digital_rights_unlock_codes_configure.htm#aanchor127||Importing and Exporting Digital Rights|prd_import_export_drm.htm#aanchor131||Serial Number Attributes|prd_product_options_digital_rights_serial_number_attributes.htm#aanchor130||Unlock Code Attributes|prd_product_options_digital_rights_unlock_code_attributes.htm#aanchor525||Unlock Code Attributes|prd_product_options_digital_rights_unlock_codes_attributes.htm#aanchor128"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />Related Topics</span></a>
+            </p>
+            <p>&#160;</p>
+        </div>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: center;">&#160;</p>
+        <hr color="#005ba8" width="100%" size="0" align="center" />
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">© 2014 Digital River, Inc. </p>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">Digital River® is a registered trademark of Digital River, Inc. | <a href="http://www.digitalriver.com/" target="_blank">www.digitalriver.com</a></p>
+        <script src="Resources/fireclick.js">
+        </script>
+        <script type="text/javascript">/* <![CDATA[ */
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+/* ]]> */</script>
+        <script type="text/javascript">/* <![CDATA[ */
+try {
+var pageTracker = _gat._getTracker("UA-10899220-1");
+pageTracker._trackPageview();
+} catch(err) {}/* ]]> */</script>
+        <script src="Resources/MasterPages/highlighter.js">
+        </script>
+        <script>/* <![CDATA[ */doSearch();/* ]]> */</script>
+    </body>
+</html>

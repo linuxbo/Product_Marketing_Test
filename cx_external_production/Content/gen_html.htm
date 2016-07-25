@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" class="" data-mc-search-type="Stem" data-mc-help-system-file-name="help_central.xml" data-mc-path-to-help-system="../" data-mc-conditions="gc_cx_conditions.shared" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Storefront|Storefront Menu|Custom Pages" data-mc-ignored-words="www.digitalriver.com;digitalriver.com;digitalriver;gcsupport">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Using HTML in the Command Console</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="Resources/Stylesheets/gc_cx_stylesheet.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/gc_cx_tablestyles.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/for_dropdowntext.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/no_border.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="body">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix"> </span><span class="MCBreadcrumbsSelf">Storefront</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Storefront Menu</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Custom Pages</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Using HTML</span>
+            </div>
+            <h1><a name="kanchor215"></a><a name="aanchor220"></a>
+                <MadCap:concept term="HTML" />Using HTML in the Command Console</h1>
+            <p>HTML&#160;or Hypertext Markup Language is a simple computer language that is used to create web pages and online content. There are some areas in the Command Console where you can use HTML&#160;to format or define the appearance of text and other elements.</p>
+            <p class="note_note"><b>Tip</b>: If you are not familiar with HTML, we recommend you <a href="http://www.w3.org/MarkUp" target="_blank">visit the HTML page on the  World Wide Web Consortium (W3C) Web site</a>. This topic is not meant to teach you how to use HTML, only to give you a reference and some guidelines for using it in the Command Console.</p>
+            <h2>General Guidelines</h2>
+            <p>There are technically no limits to the types of tags you can use with the exception that your HTML&#160;must be valid and syntactically correct. The following are some additional guidelines you should follow when using HTML&#160;in the Command Console. For a sample list of supported tags, see <a href="#SupportedHTMLCode" title="" alt="" class="MCXref xref selected"><b>Supported HTML Code</b></a>.</p>
+            <ul>
+                <li value="1">Digital River uses the XHTML 1 Transitional DTD for the display of its commerce store pages. For the most seamless and consistent look to your site across browsers, please make sure that your HTML markup is consistent with this standard. The following DOCTYPE declaration tag will be present at the top of every page that Digital River serves:                           <code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "&lt;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&gt;"&gt;</code></li>
+                <li value="2">We recommend you use HTML 5.01/XHTML 1.0 with all your custom pages to ensure that they look and behave as expected.</li>
+                <li value="3">Because XHTML is the preferred format, use a closing slash with single tags. For example, use &lt;br /&gt; instead of &lt;br&gt; and &lt;img src="filename.gif" /&gt; instead of &lt;img src="filename.gif"&gt;.</li>
+                <li value="4">Use all lowercase letters for all tags. </li>
+                <li value="5">Do not use the &lt;meta&gt; tag in Storefront Settings.</li>
+                <li value="6">When using the &lt;img&gt; tag you should include the "alt" attribute. If needed, you can include the "name" attribute.</li>
+                <li value="7">You do not need to use a class on your &lt;ul&gt;, &lt;li&gt;, or &lt;ol&gt; tags.</li>
+                <li value="8">Use the &lt;strong&gt; tag to bold text (instead of the &lt;b&gt; tag) and the &lt;em&gt; tag to italicize text (instead of the &lt;i&gt; tag).</li>
+                <li value="9">Use HTML codes to add symbols. The table below contains some HTML&#160;codes for your reference.</li>
+            </ul>
+            <table align="center" style="caption-side: top;margin-left: 50px;margin-right: auto;mc-table-style: url('Resources/TableStyles/gc_cx_tablestyles.css');" class="TableStyle-gc_cx_tablestyles" cellspacing="0">
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1" style="font-weight: bold;">Symbol</th>
+                        <th class="HeadD-Column1-Header1" style="font-weight: bold;">HTML Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">©</td>
+                        <td class="BodyD-Column1-Body1">&amp;copy;</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+®</td>
+                        <td class="BodyD-Column1-Body1">&amp;reg;</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">†</td>
+                        <td class="BodyD-Column1-Body1">&amp;dagger;</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">™</td>
+                        <td class="BodyD-Column1-Body1">&amp;#8482;</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">—<br />(long dash)</td>
+                        <td class="BodyD-Column1-Body1">&amp;#8212;</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">‘</td>
+                        <td class="BodyD-Column1-Body1">&amp;#8216;</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">’</td>
+                        <td class="BodyD-Column1-Body1">&amp;#8217;</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">“	</td>
+                        <td class="BodyD-Column1-Body1">&amp;#8220;</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">	”</td>
+                        <td class="BodyA-Column1-Body1">&amp;#8221;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Where You Can Use HTML</h2>
+            <p>HTML can be used in the following places. Click a link to jump to the area that describes how HTML&#160;is used.</p>
+            <ul>
+                <li value="1"><a href="#OfferDisplayContent" class="selected">Offer Display Content</a>
+                </li>
+                <li value="2"><a href="#StorefrontSettings" class="selected">Storefront Settings</a>
+                </li>
+                <li value="3"><a href="#Styles" class="selected">Styles</a>
+                </li>
+                <li value="4"><a href="#CustomPages" class="selected">Custom Pages</a>
+                </li>
+                <li value="5"><a href="#CustomProdAttributes" class="selected">Custom Product Attributes</a>
+                </li>
+            </ul>
+            <h3><a name="OfferDisplayContent"></a>Using HTML&#160;in Offer Display Content</h3>
+            <p>When you create an offer, you can use HTML&#160;in the offer Display Content. </p>
+            <h3><a name="StorefrontSettings"></a>Using HTML in Storefront Settings</h3>
+            <p>When you create a product, you can use HTML&#160;when you enter descriptions and email text in the <i>Storefront Details</i> area to format the look of the text. For example, you can use HTML to make some description text bold or to create a bulleted list of features for your product.</p>
+            <p class="note_note"><b>Note</b>: Do not use the &lt;meta&gt; tag in Storefront Settings.</p>
+            <table style="width: 100%;mc-table-style: url('Resources/TableStyles/for_dropdowntext.css');margin-left: auto;margin-right: auto;" class="TableStyle-for_dropdowntext" cellspacing="0">
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyA-Column1-Body1">
+                            <div class="MCDropDown MCDropDown_Open dropDown"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHead MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Click here to see where you can use HTML in the Storefront Settings.</a>
+                                <div class="MCDropDownBody dropDownBody">
+                                    <p class="small">&#160;</p>
+                                    <p>
+                                        <img src="Resources/Images/html_in_product_details.jpg" />
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3><a name="Styles"></a>Using HTML&#160;in Styles</h3>
+            <p>You can also use HTML in styles to set the look or feel of some elements.  </p>
+            <table class="TableStyle-for_dropdowntext" style="mc-table-style: url('Resources/TableStyles/for_dropdowntext.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyA-Column1-Body1">
+                            <div class="MCDropDown MCDropDown_Open dropDown"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHead MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Click here to see where you can use HTML&#160;in styles.</a>
+                                <div class="MCDropDownBody dropDownBody">
+                                    <p class="small">&#160;</p>
+                                    <p>
+                                        <img src="Resources/Images/z_html_store_builder1.gif" />
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3><a name="CustomPages"></a>Using HTML&#160;in Custom Pages</h3>
+            <p>You can use HTML&#160;in the Custom&#160;Pages you create or upload for your site. When you are creating custom pages (either using the Store Builder tool, or another tool outside the Command Console) you should make sure that the HTML or XHTML you use is valid and error-free. There are technically not limits on the code you can use but keep in mind that you should only use static content in custom pages.</p>
+            <p class="note_note"><b>Note</b>: You do not have to include the actual &lt;body&gt; tags because the files you create or upload will be loaded inside the body content for the page.</p>
+            <table style="width: 100%;mc-table-style: url('Resources/TableStyles/for_dropdowntext.css');margin-left: auto;margin-right: auto;" class="TableStyle-for_dropdowntext" cellspacing="0">
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyA-Column1-Body1">
+                            <div class="MCDropDown MCDropDown_Open dropDown"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHead MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Click here to see where you can use custom pages in HTML.</a>
+                                <div class="MCDropDownBody dropDownBody">
+                                    <p class="small">&#160;</p>
+                                    <p>
+                                        <img src="Resources/Images/z_html_store_builder2.gif" />
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3><a name="CustomProdAttributes"></a>Using HTML in Custom Product Attributes<br /></h3>
+            <p>If the site or company uses Custom Product Attributes (also called domain attributes), any text inputs or text fields for those attributes can accept HTML code. See About Custom and Common Product Attributes for more about product attributes. </p>
+            <h2><a name="SupportedHTMLCode"></a>Supported HTML Code</h2>
+            <p>There are several places in the Command Console where you can use HTML&#160;to format text. We cannot provide an extensive HTML reference here, but we have included a summary of the HTML code you can use in Storefront Settings, custom pages, offer display content, custom product attributes, and styles. </p>
+            <table align="center" style="width: 100%;mc-table-style: url('Resources/TableStyles/no_border.css');margin-left: auto;margin-right: auto;caption-side: top;" class="TableStyle_no_border" cellspacing="0">
+                <col style="width: 50%;" />
+                <col style="width: 50%;" />
+                <tbody>
+                    <tr>
+                        <td class="TableStyle_no_border_Body_0_0_RowEnd_ColSep">
+                            <ul>
+                                <li value="1" class="disc"> &lt;p&gt; &lt;/p&gt;</li>
+                                <li value="2" class="disc">&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; &lt;h5&gt; &lt;h6&gt;</li>
+                                <li value="3" class="disc">&lt;strong&gt; &lt;/strong&gt;</li>
+                                <li value="4" class="disc">&lt;em&gt; &lt;/em&gt;</li>
+                                <li value="5" class="disc">&lt;ul&gt; &lt;li&gt; &lt;/li&gt; &lt;/ul&gt;
+</li>
+                                <li value="6" class="disc">&lt;a&gt; &lt;/a&gt;
+</li>
+                                <li value="7" class="disc">&lt;img src... /&gt;</li>
+                                <li value="8" class="disc">&lt;br /&gt;</li>
+                            </ul>
+                        </td>
+                        <td class="TableStyle_no_border_Body_0_0_RowEnd_ColEnd">
+                            <ul>
+                                <li value="1" class="disc">&lt;html&gt; &lt;/html&gt;</li>
+                                <li value="2" class="disc">&lt;head&gt; &lt;/head&gt;</li>
+                                <li value="3" class="disc">&lt;link&gt;</li>
+                                <li value="4" class="disc">&lt;meta&gt; (do not use this tag in Store Details)</li>
+                                <li value="5" class="disc">&lt;title&gt; &lt;/title&gt;</li>
+                                <li value="6" class="disc">&lt;script&gt; &lt;/script&gt;</li>
+                                <li value="7" class="disc">&lt;form&gt; &lt;/form&gt;</li>
+                                <li value="8" class="disc">&lt;input&gt;</li>
+                                <li value="9" class="disc">&lt;select&gt;</li>
+                                <li value="10" class="disc">&lt;textarea&gt;</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&#160;</p>
+            <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="HTML;Custom Product Attributes" href="javascript:void(0);" data-mc-topics="Using HTML in the Command Console|#aanchor220"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />Related Topics</span></a>
+            </p>
+            <p>&#160;</p>
+        </div>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: center;">&#160;</p>
+        <hr color="#005ba8" width="100%" size="0" align="center" />
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">© 2014 Digital River, Inc. </p>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">Digital River® is a registered trademark of Digital River, Inc. | <a href="http://www.digitalriver.com/" target="_blank">www.digitalriver.com</a></p>
+        <script src="Resources/fireclick.js">
+        </script>
+        <script type="text/javascript">/* <![CDATA[ */
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+/* ]]> */</script>
+        <script type="text/javascript">/* <![CDATA[ */
+try {
+var pageTracker = _gat._getTracker("UA-10899220-1");
+pageTracker._trackPageview();
+} catch(err) {}/* ]]> */</script>
+        <script src="Resources/MasterPages/highlighter.js">
+        </script>
+        <script>/* <![CDATA[ */doSearch();/* ]]> */</script>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="help_central.xml" data-mc-path-to-help-system="../" data-mc-conditions="gc_cx_conditions.shared" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Storefront|Integrations|Custom Integrations" data-mc-ignored-words="www.digitalriver.com;digitalriver.com;digitalriver;gcsupport">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Creating Custom Integrations</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="Resources/Stylesheets/gc_cx_stylesheet.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/gc_cx_tablestyles.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/for_dropdowntext.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="body">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix"> </span><span class="MCBreadcrumbsSelf">Storefront</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Integrations</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Custom Integrations</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Creating Custom Integrations</span>
+            </div>
+            <h1><a name="kanchor238"></a><a name="aanchor243"></a>
+                <MadCap:concept term="Key Generator;Custom Integrations;Integrations" />Creating Custom Integrations</h1>
+            <p>You can create a custom integration to request a key (serial number or unlock code) when a product is ordered or revoke a key if a product is returned, the order is refunded or cancelled, or there is a chargeback, fraud or some other failure in payment or order authorization.</p>
+            <p class="note_note"><b>Note</b>: Custom Integrations is only available if your store is using the Self Service (Rivulet) template. To find out what template your store uses, contact your Store Operations Team.</p>
+            <h2>Creating Key Requests</h2>
+            <p>A key request integration sends a request for a key (serial number of unlock code) when a product set up to use the integration is purchased. </p>
+            <p style="font-weight: bold;">To create a key request custom integration:</p>
+            <table class="TableStyle-for_dropdowntext" style="mc-table-style: url('Resources/TableStyles/for_dropdowntext.css');margin-left: 0px;margin-right: auto;margin-top: -5px;margin-bottom: -5px;" cellspacing="0">
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyA-Column1-Body1" style="background-color: #c1e4ff;"><b>Role Needed</b>: <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" alt="Closed" data-mc-alt2="Open">Integration Configurations Manager<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>A user role that provides access to Custom Integrations. Search this file for the "user role definitions" topic for more information.</span></a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <ol>
+                <li value="1">On the <b>Administration</b> menu, select <b>Company</b>, and click <b>Create Custom Integration</b>. The first step of the <i>Create Custom Integration</i> wizard appears.</li>
+                <li value="2">In the <b>Name</b> field, enter a name for the custom integration. Once you save the integration you will not be able to change the name so make sure you enter the name you want</li>
+                <li value="3">(Optional) In the <b>Description</b> field, enter a description for the custom integration.</li>
+                <li value="4">For the <b>Type</b> option, select <b>Serial Number</b> or <b>Unlock Code</b>, depending on the type of key the key request integration will deliver.</li>
+                <li value="5">Click <b>Next</b>. The second page of the <i>Create Custom Integration</i> wizard appears. </li>
+                <li value="6">In the <i>Type</i> area, in the <b>Name</b> field, the name you entered on the first page of the wizard for this integration is already in the field. Do not change this name.</li>
+                <li value="7">In the <i>Key Request</i> area, you will see two different areas where you can enter information for a  production environment (the live or active environment) and for a testing environment. You should enter the information for the production environment, but you do not have to enter information for the testing environment. The testing environment will allow you to test the digital rights calls without actually affecting your digital rights keys.<ul><li value="1">The <b>Endpoint URL</b>&#160;is the URL&#160;where the key request should be sent when an order is placed for a product that has digital rights set up to use the integration. You should already have the system to accept these key request calls set up. </li><li value="2">If the system requires a <b>Username</b> and <b>Password</b>, enter it in the fields provided. </li><li value="3">If you want to provide a <b>Description</b> for this set up, enter it in the field provided.</li></ul></li>
+                <li value="8">Click <b>Next</b>. </li>
+                <li value="9">Review the details of the integration you have created. When you are ready to save the integration, click <b>Finish</b>. A message appears asking you if you want to test the settings you have entered. Click <b>Yes</b> to test the set up you have created, or click <b>No</b> to save the integration without testing. <br /><br />If you choose to test the settings you have entered, you will receive a message indicating whether the test was successful or not. If the test fails, verify the URL, user name, or password you have entered and try again.&#160;</li>
+            </ol>
+            <h2>Creating Key Revocations</h2>
+            <p>A key revocation integration sends a request to revoke or take back a key (serial number of unlock code) that was distributed when a product was purchased. A revocation can happen for many reasons including a refund, return, or fraud.   &#160;</p>
+            <p style="font-weight: bold;">To create a key revocation custom integration:</p>
+            <table class="TableStyle-for_dropdowntext" style="mc-table-style: url('Resources/TableStyles/for_dropdowntext.css');margin-left: 0px;margin-right: auto;margin-top: -5px;margin-bottom: -5px;" cellspacing="0">
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyA-Column1-Body1" style="background-color: #c1e4ff;"><b>Role Needed</b>: <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" alt="Closed" data-mc-alt2="Open">Integration Configurations Manager<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>A user role that provides access to Custom Integrations. Search this file for the "user role definitions" topic for more information.</span></a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <ol>
+                <li value="1">On the <b>Administration</b> menu, select <b>Company</b>, and click <b>Create Custom Integration</b>. The first step of the <i>Create Custom Integration</i> wizard appears.</li>
+                <li value="2">In the <b>Name</b> field, enter a name for the custom integration.</li>
+                <li value="3">(Optional) In the <b>Description</b> field, enter a description for the custom integration.</li>
+                <li value="4">For the <b>Type</b> option, select <b>Key Revocation</b>.</li>
+                <li value="5">Click <b>Next</b>. The second page of the <i>Create Custom Integration</i> wizard appears. </li>
+                <li value="6">In the <i>Key Revocation</i> area, select <b>Use as Default Revocation</b> if you want this revocation to be used by default for all revocation calls. Click <b>Company-level Key Revocation Reasons</b> to see which actions will trigger a revocation. These actions can be set when you <a href="cmp_configure_company_settings_key_revoke_reasons.htm" title="" alt="" class="MCXref xref"><b>Configuring When Key Revocations Occur</b></a>.</li>
+                <li value="7">In the <i>Key Revocation</i> area, you will see two different areas where you can enter information for a  production environment (the live or active environment) and for a testing environment. <ul><li value="1">The <b>Endpoint URL</b>&#160;is the URL&#160;where the key revocation request should be sent when a key should be revoked. Keep in mind that the reasons why a key is revoked are set by you when you <a href="cmp_configure_company_settings_key_revoke_reasons.htm" title="" alt="" class="MCXref xref"><b>Configuring When Key Revocations Occur</b></a>.</li><li value="2">If the system requires a <b>Username</b> and <b>Password</b>, enter it in the fields provided. </li><li value="3">If you want to provide a <b>Description</b> for this set up, enter it in the field provided.</li></ul></li>
+                <li value="8">Click <b>Next</b>. </li>
+                <li value="9">Review the details of the integration you have created. When you are ready to save the integration, click <b>Finish</b>. A message appears asking you if you want to test the settings you have entered. Click <b>Yes</b> to test the set up you have created, or click <b>No</b> to save the integration without testing. <br /><br />If you choose to test the settings you have entered, you will receive a message indicating whether the test was successful or not. If the test fails, verify the URL, user name, or password you have entered and try again.&#160;</li>
+            </ol>
+            <p>&#160;</p>
+            <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="Key Generator;Custom Integrations;Integrations" href="javascript:void(0);" data-mc-topics="About Custom Integrations|int_custom_integrations_about.htm#aanchor242||About Integration Exceptions|int_integration_exceptions_about.htm#aanchor247||Configuring When Key Revocations Occur|cmp_configure_company_settings_key_revoke_reasons.htm#aanchor245||Creating Custom Integrations|#aanchor243||Enabling and Disabling Custom Integrations|int_custom_integrations_enable_disable.htm#aanchor244||Managing Integration Exceptions|int_integration_exceptions_manage.htm#aanchor248||Viewing History for a Custom Integration|int_custom_integrations_view_history.htm#aanchor246"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />Related Topics</span></a>
+            </p>
+            <p>&#160;</p>
+        </div>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: center;">&#160;</p>
+        <hr color="#005ba8" width="100%" size="0" align="center" />
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">© 2014 Digital River, Inc. </p>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">Digital River® is a registered trademark of Digital River, Inc. | <a href="http://www.digitalriver.com/" target="_blank">www.digitalriver.com</a></p>
+        <script src="Resources/fireclick.js">
+        </script>
+        <script type="text/javascript">/* <![CDATA[ */
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+/* ]]> */</script>
+        <script type="text/javascript">/* <![CDATA[ */
+try {
+var pageTracker = _gat._getTracker("UA-10899220-1");
+pageTracker._trackPageview();
+} catch(err) {}/* ]]> */</script>
+        <script src="Resources/MasterPages/highlighter.js">
+        </script>
+        <script>/* <![CDATA[ */doSearch();/* ]]> */</script>
+    </body>
+</html>

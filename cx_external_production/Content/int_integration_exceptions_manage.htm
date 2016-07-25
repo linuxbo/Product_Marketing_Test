@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" class="" data-mc-search-type="Stem" data-mc-help-system-file-name="help_central.xml" data-mc-path-to-help-system="../" data-mc-conditions="gc_cx_conditions.shared" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Storefront|Integrations|Integration Exceptions" data-mc-ignored-words="www.digitalriver.com;digitalriver.com;digitalriver;gcsupport">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Managing Integration Exceptions</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="Resources/Stylesheets/gc_cx_stylesheet.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/gc_cx_tablestyles.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/for_dropdowntext.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="body">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix"> </span><span class="MCBreadcrumbsSelf">Storefront</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Integrations</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Integration Exceptions</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Managing Integration Exceptions</span>
+            </div>
+            <h1><a name="kanchor243"></a><a name="aanchor248"></a>
+                <MadCap:concept term="Integration Exceptions;Integrations" />Managing Integration Exceptions</h1>
+            <p>The Integration Exceptions tool is used to view and resubmit failed integration requests. There are several different types of exceptions that can occur, with the most common being digital rights and fulfillment exceptions.</p>
+            <p>When an integration exception occurs, the problem causing the exception must be fixed and the transaction re-extracted. As long as the exception remains unfixed, the client and Digital River cannot charge the shopper and therefore recognize revenue from the transaction. Fixing the exception may require that a line item or the entire order is canceled. Orders should only be canceled when you are sure the problem causing the exception cannot be fixed (canceling a line item or order also causes the client and Digital River to lose revenue). Once a line item or order is canceled it cannot be recovered or "un-canceled."</p>
+            <p style="font-weight: bold;">To manage integration exceptions:</p>
+            <table class="TableStyle-for_dropdowntext" style="mc-table-style: url('Resources/TableStyles/for_dropdowntext.css');margin-left: 0px;margin-right: auto;margin-top: -5px;margin-bottom: -5px;" cellspacing="0">
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyA-Column1-Body1" style="background-color: #c1e4ff;"><b>Role Needed</b>: Integration Exceptions Manager <u>or</u> <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" alt="Closed" data-mc-alt2="Open">Integration Manager<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>A user role that provides access to integration exceptions. Search this file for the "user role definitions" topic for more information.</span></a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <ol>
+                <li value="1">On the <b>Administration</b> menu, select <b>Company</b>, and click <b>Integrations Exceptions</b>. The <i>Manage Integration Exceptions</i> page appears. By default, all exception types appear in a list on the page when it loads. You may need to redefine the search parameters to find the specific order with the exception you want to view. <a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="screen1"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Click here to see an example of the Manage Integration Exceptions page</a>. </li>
+            </ol>
+            <p class="nested_p">
+                <img src="Resources/Images/integrations_exceptions1.jpg" style="display: none;" data-mc-target-name="screen1" />
+            </p>
+            <ol data-mc-continue="true">
+                <li value="2">By default, all exception types appear in a list on the page when it loads. You may need to redefine the search parameters to find the specific order with the exception you want to view<ol style="list-style-type: lower-alpha;" data-mc-continue="true"><li value="1">In the Search area, from the <b>Exception Type</b> list, choose the type of exception you want to find.</li><li value="2">(Optional) In the<b> Order ID</b>, <b>Principal ID</b>, or <b>Product ID</b> fields, enter the IDs you know about the order with the integration exception you want to find.</li><li value="3">(Optional) In the <b>Fulfiller Part Number</b> or <b>SKU</b> fields, enter the part number or SKU of the product involved in an integration exception.</li><li value="4"> Click <b>Search</b>. The search results appear on the page. </li></ol></li>
+                <li value="3">Click the <b>Order</b> ID for the transaction with the exception you need to fix. The <i>Transaction Detail</i> page appears. This page shows a summary of the transaction and gives information about the exception, including any error codes. This page also contains links to view the order summary or order history.<ul data-mc-continue="true"><li class="disc" value="1">To show the history for the transaction, click <b>Show History</b> in the taskbar. The History table appears at the bottom of the page and shows the history for the transaction. </li><li class="disc" value="2">To view the order summary, click the <b>Order ID</b> link near the top. The <i>Order Summary</i> page appears. From this page you can view details about the order, including the customer information and transaction invoice.</li></ul></li>
+                <li value="4">Depending on the type of exception, you can fix the problem causing the exception, cancel the line item with the exception, or cancel the order with the exception. Most often you will update information for the product, deploy those changes, and re-extract (resubmit) the transaction to fix the exception. There are a number of scenarios for why a specific exception occurs, so it is not possible to explain all the actions that should be taken to fix each type of exception here. The list below can help you determine the right action to take for a specific type of exception. See <a href="int_integration_exceptions_about.htm" title="" alt="" class="MCXref xref"><b>About Integration Exceptions</b></a> for more information about when to determine what action to take.      <ul data-mc-continue="true"><li class="disc" value="1">For fulfillment exceptions, look in the <b>Exception</b> column to determine which of the line items in the transaction is causing the exception (this column may also reference what must be fixed). Then, click the <b>Product ID</b> for the product. On the page that appears, you can take action to correct the exception (fix the SKU, External Reference Number and/or Fulfiller Part Number). When you are done editing the product and deploying the changes, you should re-extract the transaction.<br /><br /><img src="Resources/Images/integrations_exceptions3.jpg" /></li><li class="disc" value="2">For digital rights exceptions, if Digital River hosts the DRM for the product, you can update the serial numbers or unlock codes, which will usually fix the problem causing the exception. For example, a digital rights exception occurs when there are no more serial numbers or unlock codes associated with the product. Adding new serial numbers or unlock codes  will allow the exception to be reprocessed (make sure any changes to the product are deployed before you re-extract).</li><li class="disc" value="3">If you cannot fix the problem causing the exception, or if the exception is because of a bad part number, you can cancel the line item causing the exception. If there is only one line item in the order (and you cancel it) the entire order becomes canceled. If there is more than one line item in the order and you cancel some (but not all) you must re-extract (resubmit) the transaction after canceling the line item(s) in question. To cancel one or more line items, in the <b>Corrective Action Taken or Removal Reason</b> field, enter the reason for the cancellation. Then, select the line item(s) and click <b>Cancel Selected</b>. </li></ul></li>
+            </ol>
+            <p class="note_error_indent"><b>Warning</b>: Once a line item (product) or order (transaction) is canceled, it cannot be un-canceled.</p>
+            <ol data-mc-continue="true">
+                <li value="5">Once you fix the problem causing the exception, you must re-extract the transaction(s) from the <i>Manage Integration Exceptions</i> page. Re-extracting a transaction rebuilds and resubmits the transaction. If everything was corrected that caused the exception, the transaction(s) will process normally and will no longer be listed on the <i>Manage Integration&#160;Exceptions</i> page. <ul data-mc-continue="true"><li class="disc" value="1">After you have taken steps to fix the exception, to re-extract (resubmit) multiple transactions from the <i>Manage Integration Exceptions</i> page, first enter the reason for the re-extraction in the <b>Corrective Action Taken or Removal Reason</b> field. You must provide the solution you took or the reason for this action. Then, select the check box(es) for the transaction(s) you want to resubmit and click <b>Re-Extract Selected</b>. You can select as many transactions as needed. To resubmit all transactions listed in the search results, click <b>Re-Extract All</b>.</li></ul></li>
+                <p class="note_note"><b>Tip</b>: You can re-extract one or more transaction at the same time. If you fixed a problem that caused an exception on multiple transactions, you can select every transaction with the exception and re-extract. You do not have to re-extract each transaction separately.</p>
+                <ul data-mc-continue="true">
+                    <li class="disc" value="1">Individual transactions may also be re-extracted (resubmitted) from the <i>Transaction Details</i> page (after you have taken steps to fix the exception). You must enter the reason for the action in the <b>Corrective Action Taken or Removal Reason</b> field before clicking <b>Re-Extract</b>.</li>
+                </ul>
+            </ol>
+            <p>&#160;</p>
+            <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="Integration Exceptions;Integrations" href="javascript:void(0);" data-mc-topics="About Custom Integrations|int_custom_integrations_about.htm#aanchor242||About Integration Exceptions|int_integration_exceptions_about.htm#aanchor247||Creating Custom Integrations|int_custom_integrations_create.htm#aanchor243||Enabling and Disabling Custom Integrations|int_custom_integrations_enable_disable.htm#aanchor244||Managing Integration Exceptions|#aanchor248||Viewing History for a Custom Integration|int_custom_integrations_view_history.htm#aanchor246"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />Related Topics</span></a>
+            </p>
+            <p>&#160;</p>
+        </div>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: center;">&#160;</p>
+        <hr color="#005ba8" width="100%" size="0" align="center" />
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">© 2014 Digital River, Inc. </p>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">Digital River® is a registered trademark of Digital River, Inc. | <a href="http://www.digitalriver.com/" target="_blank">www.digitalriver.com</a></p>
+        <script src="Resources/fireclick.js">
+        </script>
+        <script type="text/javascript">/* <![CDATA[ */
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+/* ]]> */</script>
+        <script type="text/javascript">/* <![CDATA[ */
+try {
+var pageTracker = _gat._getTracker("UA-10899220-1");
+pageTracker._trackPageview();
+} catch(err) {}/* ]]> */</script>
+        <script src="Resources/MasterPages/highlighter.js">
+        </script>
+        <script>/* <![CDATA[ */doSearch();/* ]]> */</script>
+    </body>
+</html>

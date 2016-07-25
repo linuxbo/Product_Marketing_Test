@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="www.digitalriver.com;digitalriver.com;digitalriver;gcsupport" MadCap:lastBlockDepth="3" MadCap:lastHeight="166" MadCap:lastWidth="1390">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../Stylesheets/gc_cx_stylesheet.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="body">
+            <MadCap:breadcrumbsProxy />
+            <MadCap:bodyProxy class="" MadCap:targetName="">
+            </MadCap:bodyProxy>
+        </div>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: center;">&#160;</p>
+        <hr />
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">© 2014 Digital River, Inc. </p>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">Digital River® is a registered trademark of Digital River, Inc. | <a href="http://www.digitalriver.com/" target="_blank">www.digitalriver.com</a></p>
+        <script src="../fireclick.js">
+        </script>
+        <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+        <script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10899220-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+        <script src="highlighter.js">
+        </script>
+        <script>doSearch();</script>
+    </body>
+</html>

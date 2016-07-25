@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="help_central.xml" data-mc-path-to-help-system="../" data-mc-conditions="gc_cx_conditions.shared" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Storefront|Integrations|Integration Exceptions" data-mc-ignored-words="www.digitalriver.com;digitalriver.com;digitalriver;gcsupport">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>About Integration Exceptions</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="Resources/Stylesheets/gc_cx_stylesheet.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/gc_cx_tablestyles.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/for_dropdowntext.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/no_border.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="body">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix"> </span><span class="MCBreadcrumbsSelf">Storefront</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Integrations</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Integration Exceptions</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">About Integration Exceptions</span>
+            </div>
+            <h1><a name="kanchor242"></a><a name="aanchor247"></a>
+                <MadCap:concept term="Integration Exceptions;Integrations" />About Integration Exceptions</h1>
+            <p>The Integration Exceptions tool is used to view and resubmit failed integration requests. There are many different types of integration exceptions that can occur. This topic focuses on the two most common: digital rights and fulfillment exceptions.</p>
+            <p>When an integration exception occurs for a line item in an order, the line item is placed on hold and will not be fulfilled until the exception is fixed. Any additional line items sent to the same fulfiller for that order will most likely be placed on hold as well. The exception to this rule is when the fulfiller has been expressly told that partial shipments are allowed. The shopper cannot be billed for any line items that have not yet been shipped, therefore revenue for these line items cannot be recognized. If left unfixed, both Digital River and the client lose money. To release the line item, the exception must be fixed and the transaction re-extracted. If the problem cannot be fixed, the line item or transaction can be canceled.</p>
+            <p class="note_error"><b>Warning</b>: Once a line item (product) or order (transaction) is canceled, it cannot be un-canceled. You should only cancel line items or order when you are sure the exception cannot be fixed.</p>
+            <h2>Integration Exception Report</h2>
+            <p>Each day, an integration exception report is sent via email to the Store Operations team. This email contains a list of the integration exceptions that occurred for all sites, with the Site IDs and other relevant information for the specific issues, listed in a table. The email subject line also contains the Site IDs of sites reported on in the email. If no action is taken to fix the exceptions, the line items remain in limbo, and Digital River and the client cannot recognize revenue on those items.</p>
+            <p class="note_note"><b>Note</b>: You can create rules (or filters) in Microsoft<sup>®</sup> Outlook<sup>®</sup> so that only emails with specific Site IDs in the subject line appear in your Inbox. See the Help file in Outlook for more information about creating rules to filter your Inbox. For reference when creating the rule, the integration exception reports are sent from the following email address: PacificIntegrationServices@digitalriver.com</p>
+            <h2>Digital Rights Exceptions</h2>
+            <p>A digital rights request exception occurs when the digital rights for a product (serial number or unlock code) cannot be retrieved and given to the customer. This occurs when the digital rights have been depleted (the dispenser is empty) or when Digital River's integration with an external API fails or is rejected. </p>
+            <p>When you view the transaction details for a digital rights exception, you can see the specific reason for the exception listed for the line item(s) in question. </p>
+            <p>The following example shows the<i>Transaction Details</i> page for a digital rights exception. The “Transaction Exception” stated is “Empty Key Response.” This means that the digital rights for at least one product in the order are depleted or the external DRM source rejected the request because the product information submitted does not match what they have on file.</p>
+            <p>
+                <img src="Resources/Images/integrations_exceptions2.jpg" />
+            </p>
+            <p>In the list of items for the transaction, the product with text in the <b>Exception</b> column is the product with the exception you must fix. You can click the <b>Product ID</b> to view the details of the product and from the product details, make changes to the Digital Rights, Part Number, SKU, or Manufacturer Part Number (whatever caused the exception). Once you make the changes and deploy the product, the exception should be fixed and you can re-extract all transaction(s) with that exception.</p>
+            <p class="note_note"><b>Tip</b>: You can re-extract one or more transaction at the same time. If you fixed a problem that caused an exception on multiple transactions, you can select every transaction with the exception and re-extract. You do not have to re-extract each transaction separately.</p>
+            <p>If a third party is used to deliver digital rights and the integrated API&#160;failed, you can contact the supplier and get the correct DRM&#160;to issue to the customer. Once you do this, you would select the product on this screen and click <b>Issue Manually</b>. In the <i>Manually Issue Digital Rights</i> window that appears, you enter the serial number or unlock code for the product (that you get from the external DRM&#160;supplier)and click<b> Issue</b>. The digital rights information you enter will then be sent to the customer. </p>
+            <p>If the line item must be canceled because the exception cannot be fixed, you must enter text about the reason for the cancellation in the <b>Corrective Action Taken or Removal Reason</b> field. Then, you select the product and click <b>Cancel</b>. This should only be done when you cannot fix the problem that causes the exception. If the transaction contains additional line items without exceptions, you should re-extract the transaction after you cancel the problem line item. If the order contains only the one canceled line item or all line items within a given order are canceled, the entire order is canceled. </p>
+            <h3>Pending Digital Rights or Failed Digital Rights</h3>
+            <p>When a product has a pending digital rights or failed digital rights exception it means that the DRM for the product could not be sent or displayed to the customer. Pending digital rights exceptions most often occur because the external (non-Digital River) DRM dispenser for the product does not recognize the product information. Failed digital rights exceptions most often occur because the DRM dispenser (list of serial numbers and unlock codes) is empty.</p>
+            <p>When a product has a pending or failed digital rights exception it means one of the following has occurred:</p>
+            <ol>
+                <li value="1">The Digital River hosted DRM dispenser has run out of serial numbers and/or unlock codes and needs to be replenished. </li>
+                <li value="2">There is a communication problem with the external API&#160;from which the serial numbers and/or unlock codes are retrieved.</li>
+                <li value="3">The external API from which the serial numbers and/or unlock codes are retrieved has rejected the request.</li>
+            </ol>
+            <p>In case 1 above, you must contact the client and have them add serial numbers and/or unlock codes for the product (line item). Instructions for how to do this can be found through <a href="prd_product_options_digital_rights_about.htm" title="" alt="" class="MCXref xref"><b>About the Digital Rights Option</b></a>.</p>
+            <p>In case 2 above,  the digital rights request will be retried for up to 21 days. If, after 21 days, the API still fails and the digital rights still have not been retrieved, the transaction will require manual intervention from Digital River. This involves contacting the client or customer (shopper) to determine what action should be taken. The DRM&#160;for the line item (product) may be issued manually, or the line item and/or order may be canceled.</p>
+            <p>In case 3 above, the cause or problem that appears for the exception  on the Manage Integration Exceptions page must be fixed and the transaction re-extracted.  In most cases, a digital rights request is rejected because the Part Number is not recognized by the API. You should verify the SKU, External Reference Number, and/or Fulfiller Part Number for the product (line item) causing the exception. If you make changes to the product make sure you deploy the product before re-extracting the transaction. </p>
+            <h2>Fulfillment Exceptions</h2>
+            <p>A fulfillment request exception occurs when one of the following occurs:</p>
+            <ol>
+                <li value="1">There is a communication problem with the fulfiller's fulfillment request API.</li>
+                <li value="2">The fulfiller's API has rejected the fulfillment request. In most cases, this is due to the Part Number not being recognized or has been discontinued. </li>
+            </ol>
+            <p>In case 1 above, the fulfillment request will be retried for up to 21 days. If, after 21 days, the API still fails and the fulfillment request cannot be completed, the transaction will require manual intervention from Digital River. This involves contacting the client or customer (shopper) to determine what action should be taken. The transaction (order) may have to be canceled. </p>
+            <p>In case 2 above, the cause of problem that appears for the exception  on the <i>Manage Integration Exceptions</i> page must be fixed and the transaction re-extracted. For example, if the exception is a "Fulfiller Indicated SKU Error Event" it means that the Part Number is not recognized by the fulfiller. In this scenario, the SKU, External Reference Number and/or Fulfiller Part Number may need to be updated and the product redeployed before the transaction is re-extracted. </p>
+            <p>The following example shows what appears on the <i>Transaction Details</i> page for the fulfillment exception explained in case 2 above. The “Transaction Exception” stated is “Fulfiller Indicated SKU-Error Event.” This means that the fulfiller SKU for a product is not valid.</p>
+            <p>
+                <img src="Resources/Images/integrations_exceptions4.jpg" />
+            </p>
+            <p>In the list of items for the transaction, the product with text in the <b>Exception</b> column is the product with the exception you must fix. You can click the <b>Product ID</b> to view the details of the product and from the product details, make changes to the fulfiller, fulfiller part number, warehouse, or warehouse part number (whatever caused the exception). Once you make the changes and deploy the product, the exception should be fixed and you can re-extract the transaction.</p>
+            <p>If the line item must be canceled because the exception cannot be fixed, you must enter text about the reason for the cancellation in the <b>Corrective Action Taken or Removal Reason</b> field. Then, you select the product and click <b>Cancel</b>. This should only be done when you cannot fix the problem that causes the exception. If the transaction contains additional line items without exceptions, you should re-extract the transaction after you cancel the problem line item.</p>
+            <h3>Bad Part Number</h3>
+            <p>When a line item has a "bad part number" exception, it means that the part number saved with the product does not match what the fulfiller has on record. Products with this exception are essentially "dead" products to the fulfiller. Most exceptions of this type require the product part number or fulfiller part number to be updated. </p>
+            <p>To fix bad part number exceptions, you must first determine the Fulfiller and Warehouse Location for the product. Then, you contact the Fulfiller to determine the correct Part Number (the one they have on record). Once you get the fulfiller part number, you edit the product  and update the Fulfiller Part Number. After you deploy the product, you can  re-extract the transaction.</p>
+            <h3>Discontinued Part Number</h3>
+            <p>When a line item has a "discontinued part number" exception, it means that the part number saved with the product has been discontinued by the fulfiller. This is usually because the fulfiller no longer stocks the product or because the product has been replaced with another product that has a different part number.</p>
+            <p>To fix discontinued part number exceptions, you must first check if the line item (product) has more than one fulfiller. </p>
+            <ul>
+                <li value="1">If the line item (product) is associated with more than one fulfiller, you must first disassociate the fulfiller that had the exception from the product. <br /><br />For example, if the product has multiple fulfillers but one (DSS) says the part number is discontinued, you would remove DSS as a fulfiller for the product, redeploy the product, and re-extract the transaction. The line item in the transaction will be sent to one of the remaining fulfillers associated with the product for fulfillment. </li>
+                <li value="2">If the line item (product) is only associated with the fulfiller where the exception occurred, you must cancel the line item. If the transaction has additional line items (products) that do not have exceptions, you must re-extract the transaction.&#160;In this scenario, you may also want to  retire the product since it cannot be fulfilled, or get fulfillment set up with another fulfiller, or get more inventory sent to the fulfiller.</li>
+            </ul>
+            <p>&#160;</p>
+            <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="Integration Exceptions;Integrations" href="javascript:void(0);" data-mc-topics="About Custom Integrations|int_custom_integrations_about.htm#aanchor242||About Integration Exceptions|#aanchor247||Creating Custom Integrations|int_custom_integrations_create.htm#aanchor243||Enabling and Disabling Custom Integrations|int_custom_integrations_enable_disable.htm#aanchor244||Managing Integration Exceptions|int_integration_exceptions_manage.htm#aanchor248||Viewing History for a Custom Integration|int_custom_integrations_view_history.htm#aanchor246"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />Related Topics</span></a>
+            </p>
+            <p>&#160;</p>
+        </div>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: center;">&#160;</p>
+        <hr color="#005ba8" width="100%" size="0" align="center" />
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">© 2014 Digital River, Inc. </p>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">Digital River® is a registered trademark of Digital River, Inc. | <a href="http://www.digitalriver.com/" target="_blank">www.digitalriver.com</a></p>
+        <script src="Resources/fireclick.js">
+        </script>
+        <script type="text/javascript">/* <![CDATA[ */
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+/* ]]> */</script>
+        <script type="text/javascript">/* <![CDATA[ */
+try {
+var pageTracker = _gat._getTracker("UA-10899220-1");
+pageTracker._trackPageview();
+} catch(err) {}/* ]]> */</script>
+        <script src="Resources/MasterPages/highlighter.js">
+        </script>
+        <script>/* <![CDATA[ */doSearch();/* ]]> */</script>
+    </body>
+</html>

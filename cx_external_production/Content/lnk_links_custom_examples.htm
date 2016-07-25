@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="help_central.xml" data-mc-path-to-help-system="../" data-mc-conditions="gc_cx_conditions.shared" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Storefront|Storefront Menu|Links and Parameters|About Links" data-mc-ignored-words="www.digitalriver.com;digitalriver.com;digitalriver;gcsupport">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Custom Link Examples</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="Resources/Stylesheets/gc_cx_stylesheet.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/gc_cx_tablestyles.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/for_dropdowntext.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="body">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix"> </span><span class="MCBreadcrumbsSelf">Storefront</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Storefront Menu</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Links and Parameters</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">About Links</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Custom Link Examples</span>
+            </div>
+            <h1><a name="kanchor204"></a><a name="aanchor209"></a>
+                <MadCap:concept term="Links;Links Custom" />Custom Link Examples</h1>
+            <p>To help you understand what you can do by building your own links, we’ve included several examples with an explanation of what each link is intended to do. We’ve highlighted, in <span style="font-family: 'Courier New'; font-weight: bold;">bold</span>, the elements in the URL that determine how the link operates. As you review these samples you may find it helpful to find the corresponding elements in the tables found in <a href="lnk_links_custom_create.htm" title="" alt="" class="MCXref xref"><b>Creating Custom Links</b></a>. </p>
+            <p class="note_error"><b>Warning!</b> The examples in this section are for your reference only, and should never be used on your store. If you want to construct your own links, see <a href="lnk_links_custom_create.htm" title="" alt="" class="MCXref xref"><b>Creating Custom Links</b></a>.</p>
+            <h3>Locale Links</h3>
+            <p>You can use the "locale" element of the URL to have the link load the store using a supported locale. Keep in mind that locale indicates both language and currency. </p>
+            <table class="TableStyle-for_dropdowntext" style="caption-side: top;margin-left: 0;margin-right: auto;mc-table-style: url('Resources/TableStyles/for_dropdowntext.css');" cellspacing="0">
+                <col style="width: 672px;" class="Column-Column1" />
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyA-Column1-Body1">
+                            <p class="CellBody" style="font-family: 'Courier New';font-weight: normal;font-style: normal;font-size: 10pt;letter-spacing: 0em;color: #000000;text-decoration: none;"><span class="Code">http://store.digitalriver.com/store/demo/</span><span class="Code" style="font-weight: bold;">en_GB</span><span class="Code" style="font-weight: normal;">/home</span>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Theme Links</h3>
+            <p>You can use the "theme" parameter to indicate which theme you want to be used when the link is clicked and your store is opened. This is especially helpful when generating links for special promotions and shoppers. See <a href="ts_about_using_themes_to_apply_styles_to_pages.htm" title="" alt="" class="MCXref xref"><b>Using Themes to Apply Styles to Pages</b></a> for more about themes. </p>
+            <table class="TableStyle-for_dropdowntext" style="caption-side: top;margin-left: 0;margin-right: auto;mc-table-style: url('Resources/TableStyles/for_dropdowntext.css');" cellspacing="0">
+                <col style="width: 672px;" class="Column-Column1" />
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyA-Column1-Body1">
+                            <p class="CellBody" style="font-family: 'Courier New';font-weight: normal;font-style: normal;font-size: 10pt;letter-spacing: 0em;color: #000000;text-decoration: none;"><span class="Code">http://store.digitalriver.com/store/demo/DisplayHomePage/</span><span class="Code" style="font-weight: bold;">themeID.23200</span>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>"Buy" Links</h3>
+            <p>The "buy" action allows you to create a link that will add a product to the Shopping Cart. With the "buy" action you can use additional parameters that define how many of the product are added to the cart, whether an offer is triggered by the action, whether the link is tracked by a program, what happens after the shopper clicks the link, and how the store or pricing appears to the shopper.</p>
+            <h4>Add Specific Quantity of One Product</h4>
+            <p>With the "buy" action, can use the "quantity" parameter to define how many of a specific product you want to be added to the Shopping Cart.</p>
+            <table class="TableStyle-for_dropdowntext" style="caption-side: top;margin-left: 0;margin-right: auto;mc-table-style: url('Resources/TableStyles/for_dropdowntext.css');" cellspacing="0">
+                <col style="width: 672px;" class="Column-Column1" />
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyA-Column1-Body1">
+                            <p class="CellBody" style="font-family: 'Courier New';font-weight: normal;font-style: normal;font-size: 10pt;letter-spacing: 0em;color: #000000;text-decoration: none;"><span class="Code">http://store.digitalriver.com/store/demo/</span><b>buy/productID.45128400/quantity.2</b>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4>Add Specific Quantity of Multiple Products</h4>
+            <p>With the "buy" action, you can add multiple products to the cart and use the "quantity" parameter to define how many of each product should be added. Make sure you always put the "quantity" parameter right after the "productID" parameter or the link will not work correctly. </p>
+            <table class="TableStyle-for_dropdowntext" style="caption-side: top;margin-left: 0;margin-right: auto;mc-table-style: url('Resources/TableStyles/for_dropdowntext.css');" cellspacing="0">
+                <col style="width: 672px;" class="Column-Column1" />
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyA-Column1-Body1">
+                            <p class="CellBody" style="font-family: 'Courier New';font-weight: normal;font-style: normal;font-size: 10pt;letter-spacing: 0em;color: #000000;text-decoration: none;"><span class="Code">http://store.digitalriver.com/store/demo/buy/</span><span class="Code" style="font-weight: bold;">productID.45128400/quantity.1/productID.46143500/quantity.2</span>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4>Add Product in Marketing Offer</h4>
+            <p>With the "buy" action you can use the "offerID" parameter to have the link trigger an offer created for the product being added to the Shopping Cart. </p>
+            <table class="TableStyle-for_dropdowntext" style="caption-side: top;margin-left: 0;margin-right: auto;mc-table-style: url('Resources/TableStyles/for_dropdowntext.css');" cellspacing="0">
+                <col style="width: 672px;" class="Column-Column1" />
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyA-Column1-Body1">
+                            <p class="CellBody" style="font-family: 'Courier New';font-weight: normal;font-style: normal;font-size: 10pt;letter-spacing: 0em;color: #000000;text-decoration: none;"><span class="Code">http://store.digitalriver.com/store/demo/buy/productID.8688900/</span><span class="Code" style="font-weight: bold;">offerID.107138209</span>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4>Add Product and Use Program ID to Track</h4>
+            <p>With the "buy" action, you can use the "programID" parameter to indicate you want the traffic from the link tracked by a program you have already created for the store. </p>
+            <table class="TableStyle-for_dropdowntext" style="caption-side: top;margin-left: 0;margin-right: auto;mc-table-style: url('Resources/TableStyles/for_dropdowntext.css');" cellspacing="0">
+                <col style="width: 672px;" class="Column-Column1" />
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyA-Column1-Body1">
+                            <p class="CellBody" style="font-family: 'Courier New';font-weight: normal;font-style: normal;font-size: 10pt;letter-spacing: 0em;color: #000000;text-decoration: none;"><span class="Code">http://store.digitalriver.com/store/demo/buy/productID.8641700/</span><span class="Code" style="font-weight: bold;">pgm.215857</span>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&#160;</p>
+            <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="Links" href="javascript:void(0);" data-mc-topics="About Links|lnk_links_about.htm#aanchor207||Basic Link Structure|lnk_links_about_link_structure.htm#aanchor208||Copying Link URL|lnk_links_copy_url.htm#aanchor213||Creating Custom Links|lnk_links_custom_create.htm#aanchor212||Creating Links for Tracking Programs|tp_create_links_for_programs.htm#aanchor412||Creating Links|lnk_links_create.htm#aanchor211||Custom Link Examples|#aanchor209||Deleting Links|lnk_links_delete.htm#aanchor215||Previewing Links|lnk_links_preview.htm#aanchor214||Search Engine Friendly Links|lnk_links_about_search_engine_friendly.htm#aanchor210"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />Related Topics</span></a>
+            </p>
+            <p>&#160;</p>
+        </div>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: center;">&#160;</p>
+        <hr color="#005ba8" width="100%" size="0" align="center" />
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">© 2014 Digital River, Inc. </p>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">Digital River® is a registered trademark of Digital River, Inc. | <a href="http://www.digitalriver.com/" target="_blank">www.digitalriver.com</a></p>
+        <script src="Resources/fireclick.js">
+        </script>
+        <script type="text/javascript">/* <![CDATA[ */
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+/* ]]> */</script>
+        <script type="text/javascript">/* <![CDATA[ */
+try {
+var pageTracker = _gat._getTracker("UA-10899220-1");
+pageTracker._trackPageview();
+} catch(err) {}/* ]]> */</script>
+        <script src="Resources/MasterPages/highlighter.js">
+        </script>
+        <script>/* <![CDATA[ */doSearch();/* ]]> */</script>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" class="" data-mc-search-type="Stem" data-mc-help-system-file-name="help_central.xml" data-mc-path-to-help-system="../" data-mc-conditions="gc_cx_conditions.shared" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Catalog|Products" data-mc-ignored-words="www.digitalriver.com;digitalriver.com;digitalriver;gcsupport">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Viewing Product History</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="Resources/Stylesheets/gc_cx_stylesheet.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/gc_cx_tablestyles.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/for_dropdowntext.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="body">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix"> </span><span class="MCBreadcrumbsSelf">Catalog</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Products</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Viewing Product History</span>
+            </div>
+            <h1><a name="kanchor163"></a><a name="aanchor167"></a>
+                <MadCap:concept term="Products;History" />Viewing Product History</h1>
+            <p>You can view the history of changes to a product and see who made the change and when. This includes changes made to the product using the Command Console, the Import and Export feature, and the bulk XML&#160;feed. Viewing history for a product can be helpful when you want to know when a specific change was made.</p>
+            <p class="note_note"><b>Note</b>:&#160;There are some events that are not logged in product history due to some system limitations: changes to fees, digital rights, and how often subscription notifications are sent.</p>
+            <h2>Understanding What You See</h2>
+            <p>When you view history for a product there are several different pieces of information you see on the screen that can help you understand what changes were made to a product, how, and by whom.</p>
+            <table class="TableStyle-gc_cx_tablestyles" style="mc-table-style: url('Resources/TableStyles/gc_cx_tablestyles.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+                <col style="width: 13px;" class="Column-Column1" />
+                <col class="Column-Column1" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">Element</th>
+                        <th class="HeadD-Column1-Header1">Definition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">Change Type</td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Indicates the type of event that was logged:</p>
+                            <ul>
+                                <li class="table" value="1"><b>Took Ownership</b> – Indicates that editing ownership of the product was taken by the user indicated in the Modified By column. Ownership simply means that the user was the last person to edit it and no other user will be able to edit the product until they take editing ownership. Ownership is used to prevent two users from making changes to the same product at the same time.</li>
+                                <li class="table" value="2"><b>Save</b> – Indicates the product was saved. If "(Live Change)" appears after save it means that the change was made immediately to your store (versus a change that requires you to deploy the product before the change is seen on your store). <br /><br />When you click the +&#160;to view the details of a save event, you can see the following (not all these columns will appear with every save event):<ul><li class="disc" value="1"><b>Locale</b>&#160;– Indicates the locale(s)&#160;in which the change was performed. </li><li class="disc" value="2"><b>Area</b> – Indicates the general area of the product editor the change was performed. For example, if you make a change to the product name, the area would list "Storefront Settings" as this is where the name can be found.</li><li class="disc" value="3"><b>Field</b> – Indicates the field that was changed. Use this name with the Area to help you locate the attribute in the Command Console UI.</li><li class="disc" value="4"><b>Old Value</b> – Shows what was entered/existed before the change. If not value was present "No content" will appear. </li><li class="disc" value="5"><b>New Value</b> – Shows what was entered/selected with the change.</li></ul></li>
+                            </ul>
+                            <p class="note_note_indent"><b>Note</b>: Keep in mind that just because a product was saved doesn't always mean the product was changed. If someone views the product and clicks the Save button without making any changes, the system will still log that change in the history. </p>
+                            <ul>
+                                <li value="1"><b>State Changed</b> – Indicates that the status of the product was changed. There are many ways that the state a product can change, the most significant is when you edit a product. State changes also happen when you deploy or retire a product.</li>
+                                <li value="2"><b>Copy</b> – Indicates that the product is a copy of another product. When a copy event is shown in the history, the product ID and name of the product from which the new product was copied is also shown.</li>
+                                <li value="3"><b>Revert</b> – Indicates that the product was reverted to a previous version (and indicates what version that was).&#160;For more about reverting a product, see <a href="prd_revert_changes_about.htm" title="" alt="" class="MCXref xref"><b>About Reverting Changes to Products</b></a>.</li>
+                                <li value="4"><b>Variation Added</b> – Indicates a variation was added. The variation ID, as well as the varying attributes will also appear in the Change Type column.</li>
+                                <li value="5"><b>Variation Deleted</b> – Indicates a variation was deleted. The variation ID, as well as the varying attributes will also appear in the Change Type column.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Product/Variation ID</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Indicates the product ID&#160;or variation ID&#160;of the product in question. </p>
+                            <ul>
+                                <li value="1">If the product is an individual product only the product ID&#160;will appear.</li>
+                                <li value="2">the If the product is a base product, "(Base)" will appear after the ID. </li>
+                                <li value="3">If the product is a variation, the name of the variation as well as the varying attributes (in parentheses) will appear after the ID. </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">Modified By</td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Indicates who performed the event, and how they performed the event.</p>
+                            <ul>
+                                <li class="table" value="1">If the event was performed by the user in the Command Console, the Modified By column will simply show their user ID and name (in parentheses).</li>
+                                <li class="table" value="2">If the event was performed by the user using the Product Import and Export feature, the Modified By column will show "(Bulk)" after their user ID.</li>
+                                <li class="table" value="3">If the event was performed by the bulk XML&#160;product feed, the Modified By column will show "Bulk Feed" and then the ID for the XML&#160;job in parentheses.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">Modified On</td>
+                        <td class="BodyA-Column1-Body1">Indicates the date and time when the event took place. </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-weight: bold;">&#160;</p>
+            <p style="font-weight: bold;">To view product history:</p>
+            <table class="TableStyle-for_dropdowntext" style="mc-table-style: url('Resources/TableStyles/for_dropdowntext.css');margin-left: 0px;margin-right: auto;margin-top: -5px;margin-bottom: -5px;" cellspacing="0">
+                <col class="Column-Column1" />
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyA-Column1-Body1" style="background-color: #c1e4ff;"><b>Role Needed</b>: <a href="javascript:void(0);" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" alt="Closed" data-mc-alt2="Open">Catalog Manager<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>A user role that allows the user access to the catalog and product features. Search this file for the "user role definitions" topic for more information.</span></a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <ol style="list-style: decimal;list-style-type: decimal;" data-mc-continue="true">
+                <li value="1">On the <b>Catalog</b> menu, select <b>Products</b>, and click <b>Manage Products</b>.</li>
+                <li value="2">Select the product you want to view history for and click <b>View History</b>. The <i>Product History</i> page appears.</li>
+            </ol>
+            <p class="note_note_indent"><b>Tip</b>: You can also click <b>View History</b> when viewing the details of a product to see the product history.<br /></p>
+            <ol style="list-style: decimal;list-style-type: decimal;" data-mc-continue="true">
+                <li value="3">In <i>Filters</i> area, in the <b>From Date</b> field, enter the start date (MM/DD/YY) for the history you want to view. Then, in the <b>To Date</b> field, enter the last day of changes you want to view. Click <b>Search</b> to show the changes to this product for the time frame you have defined. <br /></li>
+                <li value="4">When you are done, click <b>Done</b> to return to the <i>Products</i> list or the page from which you opened the <i>Product History</i> page.</li>
+            </ol>
+            <p>&#160;</p>
+            <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="History" href="javascript:void(0);" data-mc-topics="Viewing History for Content Layout Pages|cntl_layouts_view_history.htm#aanchor234||Viewing Product History|#aanchor167"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />Related Topics</span></a>
+            </p>
+            <p>&#160;</p>
+        </div>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: center;">&#160;</p>
+        <hr color="#005ba8" width="100%" size="0" align="center" />
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">© 2014 Digital River, Inc. </p>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">Digital River® is a registered trademark of Digital River, Inc. | <a href="http://www.digitalriver.com/" target="_blank">www.digitalriver.com</a></p>
+        <script src="Resources/fireclick.js">
+        </script>
+        <script type="text/javascript">/* <![CDATA[ */
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+/* ]]> */</script>
+        <script type="text/javascript">/* <![CDATA[ */
+try {
+var pageTracker = _gat._getTracker("UA-10899220-1");
+pageTracker._trackPageview();
+} catch(err) {}/* ]]> */</script>
+        <script src="Resources/MasterPages/highlighter.js">
+        </script>
+        <script>/* <![CDATA[ */doSearch();/* ]]> */</script>
+    </body>
+</html>

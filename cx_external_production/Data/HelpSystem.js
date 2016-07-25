@@ -1,0 +1,11 @@
+var xmlHelpSystemData = "";
+xmlHelpSystemData += '<?xml version=\"1.0\" encoding=\"utf-8\"?>';
+xmlHelpSystemData += '<WebHelpSystem DefaultUrl=\"Content/z_cx_help_central_home.htm\" Toc=\"Data/Toc.js\" Index=\"Data/Index.js\" Concepts=\"Data/Concepts.js\" BrowseSequence=\"Data/BrowseSequence.js\" Glossary=\"Data/Glossary.js\" SearchDatabase=\"Data/Search.js\" Alias=\"Data/Alias.xml\" Synonyms=\"Data/Synonyms.xml\" SearchFilterSet=\"Data/Filters.js\" SkinName=\"html5_skin_rebrand\" SkinID=\"html5_skin_rebrand\" Multilingual=\"false\" Skins=\"html5_skin_rebrand\" BuildTime=\"7/12/2016 1:35:17 PM\" BuildVersion=\"12.0.5991.25330\" TargetType=\"WebHelp2\" SkinTemplateFolder=\"Skin/\" InPreviewMode=\"false\" MoveOutputContentToRoot=\"false\" ReplaceReservedCharacters=\"false\" MakeFileLowerCase=\"false\" UseCustomTopicFileExtension=\"false\" PreventExternalUrls=\"false\" EnableResponsiveOutput=\"false\" IncludeGlossarySearchResults=\"true\" ResultsPerPage=\"20\" xml:lang=\"en\" LanguageName=\"English\">';
+xmlHelpSystemData += '    <CatapultSkin Version=\"2\" SkinType=\"WebHelp2\" Comment=\"HTML5 skin\" Anchors=\"Width,Height\" Width=\"800\" Height=\"600\" Top=\"0\" Left=\"0\" Bottom=\"0\" Right=\"0\" Tabs=\"TOC,Glossary\" DefaultTab=\"TOC\" UseBrowserDefaultSize=\"true\" UseDefaultBrowserSetup=\"false\" AutoSyncTOC=\"false\" NavigationLinkTop=\"false\" NavigationLinkBottom=\"false\" CommentsInTopic=\"false\" DisplayNotificationOptions=\"false\" DisplayCommunitySearchResults=\"false\" Title=\"Digital River Help Central\" BrowserSetup=\"\" Name=\"html5_skin_rebrand\" SkinID=\"html5_skin_rebrand\" SkinClass=\"_Skins_html5_skin_rebrand\" HideNavOnStartup=\"True\" LogoUrl=\"\">';
+xmlHelpSystemData += '        <Toolbar EnableCustomLayout=\"true\" Buttons=\"Print|CurrentTopicIndex|RemoveHighlight\">';
+xmlHelpSystemData += '            <Script>ExpandAll(\"open\"); parent.frames[\"body\"].focus(); parent.frames[\"body\"].print();</Script>';
+xmlHelpSystemData += '        </Toolbar>';
+xmlHelpSystemData += '        <WebHelpOptions HideNavigationOnStartup=\"true\" NavigationPaneWidth=\"326\" />';
+xmlHelpSystemData += '    </CatapultSkin>';
+xmlHelpSystemData += '</WebHelpSystem>';
+MadCap.Utilities.Xhr._FilePathToXmlStringMap.Add('HelpSystem', xmlHelpSystemData);

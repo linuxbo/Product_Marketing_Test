@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="help_central.xml" data-mc-path-to-help-system="../" data-mc-conditions="gc_cx_conditions.shared" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Storefront|Storefront Menu|Links and Parameters" data-mc-ignored-words="www.digitalriver.com;digitalriver.com;digitalriver;gcsupport">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Creating Custom Links</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="Resources/Stylesheets/gc_cx_stylesheet.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/gc_cx_tablestyles.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="body">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix"> </span><span class="MCBreadcrumbsSelf">Storefront</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Storefront Menu</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Links and Parameters</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Building Your Own Links</span>
+            </div>
+            <h1><a name="kanchor207"></a><a name="aanchor212"></a>
+                <MadCap:concept term="Links;Links Custom" />Creating Custom Links</h1>
+            <p>The Links tool is a quick and easy way to create basic links for your store. However, if you need a link that does more that what the tool offers, you create your own link manually. The only requirement is you follow the same structure and format used by links created by the Links feature.</p>
+            <p class="note_note"><b>Tip</b>:&#160;We recommend that you use the Links tool to create any links you will send to shoppers via email or post on your store or other online site. Using the tool will ensure that the link will behave as expected. If you do build your own link, we strongly recommend you test the link to ensure it works as intended.</p>
+            <h2>How to Build Your Link</h2>
+            <p>To create a link you simply replace the elements shown in bold in the example in <a href="lnk_links_about_link_structure.htm" title="" alt="" class="MCXref xref"><b>Basic Link Structure</b></a> with the appropriate elements from the tables in the following sections. </p>
+            <p>For example, to create a "buy" link where a product is added to the Shopping Cart, you would replace "action" with the word "buy" and replace "parameter.value" with the word "productID" and the actual product ID for the product you want the link to add to the Shopping Cart.</p>
+            <h3>Site ID</h3>
+            <p>Every link must contain a site ID. Some companies may have more than one site or store, so it is especially important for those companies to include the correct site ID in their links. However, even companies with only one site or store must include their site ID in the URL or the link will not work.</p>
+            <h3>Locale</h3>
+            <p>Including a locale code in the URL is optional, but we recommend you always include one to ensure the shopper is getting the right version of your store. Locales are added to the URL using the ISO four-character locale code. These are the same codes you should have seen throughout your store and the Command Console. You can only include one locale code in each link.</p>
+            <h3>Action</h3>
+            <p>There are many different actions you can use with a link to do something on your store. The most used action, by far, is the "buy" action. This action triggers a product to be added to the cart. The following table outlines the actions you can use with links. </p>
+            <table class="TableStyle-gc_cx_tablestyles" style="caption-side: top;mc-table-style: url('Resources/TableStyles/gc_cx_tablestyles.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <td class="HeadE-Column1-Header1">
+                            <p>Action</p>
+                        </td>
+                        <td class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>buy</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Adds one or more products to the Shopping Cart. This action replaces all previous "AddItemToRequisition" actions that have been previously used within the Command Console.</p>
+                            <p>This action requires the "productID" parameter. If the product has variations, the variation product ID must be used. You can also include the quantity parameter if you want to have more than one of the product added to the Shopping Cart.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>cart</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Takes the shopper to the Shopping Cart.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>cat</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Takes the shopper to the category listing page. </p>
+                            <p>This action requires the "categoryID" parameter.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>contact</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Takes the shopper to the Contact Us page</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>global</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Takes the shopper to the locale selection page.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>help</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Takes the shopper to the Help pages.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>home</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Takes the shopper to the store Home page.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>html</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Loads an custom page that has been uploaded to your store.</p>
+                            <p class="CellNote">This action requires the "pbpage" parameter.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>list</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Takes the shopper to a product listing page.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>login</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Takes the shopper to the login page for your store.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p>pd</p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Takes the shopper to the Product Details page.</p>
+                            <p>This action requires the "productID" parameter.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Parameters and Variables</h3>
+            <p>Depending on what action is included in the URL, one or more parameters may be needed to tell your store exactly what you want the link to do. The following table outlines the parameters that can include in your URL.</p>
+            <table class="TableStyle-gc_cx_tablestyles" style="caption-side: top;margin-left: 0;margin-right: auto;mc-table-style: url('Resources/TableStyles/gc_cx_tablestyles.css');" cellspacing="0">
+                <col width="124px" class="Column-Column1" />
+                <col width="378px" class="Column-Column1" />
+                <col width="170px" class="Column-Column1" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <td class="HeadE-Column1-Header1">
+                            <p>Parameter</p>
+                        </td>
+                        <td class="HeadE-Column1-Header1">
+                            <p>Description</p>
+                        </td>
+                        <td class="HeadD-Column1-Header1">
+                            <p>Variables</p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>backlink</p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Used with the "buy" action to indicate where you want the "Continue Shopping" button in the Shopping Cart to go when clicked.</p>
+                            <p class="CellNote">This parameter should only used with the "buy" action.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Any valid Web address that has been URL encoded. </p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>categoryID</p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Used to indicate which category you want to show the Category Listing page for.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Any valid category ID for the store.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>clearCart</p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Used with the "buy" action to removes any products that are in the cart at the time when the link is clicked. Does not clear out products that are added via the same link.</p>
+                            <p class="CellNote">This parameter should only used with the "buy" action.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p class="CellBullet">yes</p>
+                            <p class="CellBullet">no</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>currency</p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Indicates which currency you want to be used to display pricing on the store.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Any valid three-digit ISO currency code can be used with the "currency" variable.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>externalRefID</p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Used with the "buy" action and when you want to use the External Reference ID that you have entered for a product, instead of the system-generated Product ID used to identify which product should be added to the Shopping Cart.</p>
+                            <p class="CellNote">This parameter should only used with the "buy" action.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Any valid External Reference ID set for a product on the store.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>forceProduct</p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Used with the "buy" action to force the product to be added to the cart, bypassing any interstitial pages or forcing the shopper to select a variation (if present). </p>
+                            <p>When used with products with variations, the first variation listed in the drop-down list on the Product Details pages will be used.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p class="CellBullet">yes</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>nextPage</p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Used with the "buy" action to indicate what page you want to load when the shopper clicks the link and the product is added to the Shopping Cart.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p class="CellBullet">HomePage</p>
+                            <p class="CellBullet">ShoppingCartPage</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>pbpage</p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Used with the "html" action to indicate which Custom&#160;Page you want the link to display.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Any valid Custom&#160;Page name. </p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>productID</p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Used with the "buy" or "list" actions to indicate which product you want the link to add to the Shopping Cart or show on the store.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Any valid product ID for a product on the store.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>programID</p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Used with the "buy" action to indicate what program should be used to track traffic on the link. </p>
+                            <p>When a link with a program ID is clicked, the visits, page counts, and revenues for each unique program ID will be tracked.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Any valid program ID. The program must be created and deployed on the store.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>quantity</p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Used with the "buy" action to indicate how many of the product should be added to the Shopping Cart.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Any valid positive number.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>showCouponCode</p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Used with the "buy" action to show the Coupon Code entry field in the Shopping Cart when it normally is hidden or not shown for the store.</p>
+                            <p class="CellNote">This parameter should only used with the "buy" action.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p class="CellBullet">yes</p>
+                            <p class="CellBullet">no</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p>themeID</p>
+                        </td>
+                        <td class="BodyB-Column1-Body1">
+                            <p>Used to indicate what theme you want to be used when the link is clicked.</p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Any valid theme ID. The theme must be created and deployed on the store.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&#160;</p>
+            <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="Links" href="javascript:void(0);" data-mc-topics="About Links|lnk_links_about.htm#aanchor207||Basic Link Structure|lnk_links_about_link_structure.htm#aanchor208||Copying Link URL|lnk_links_copy_url.htm#aanchor213||Creating Custom Links|#aanchor212||Creating Links for Tracking Programs|tp_create_links_for_programs.htm#aanchor412||Creating Links|lnk_links_create.htm#aanchor211||Custom Link Examples|lnk_links_custom_examples.htm#aanchor209||Deleting Links|lnk_links_delete.htm#aanchor215||Previewing Links|lnk_links_preview.htm#aanchor214||Search Engine Friendly Links|lnk_links_about_search_engine_friendly.htm#aanchor210"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />Related Topics</span></a>
+            </p>
+            <p>&#160;</p>
+        </div>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: center;">&#160;</p>
+        <hr color="#005ba8" width="100%" size="0" align="center" />
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">© 2014 Digital River, Inc. </p>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">Digital River® is a registered trademark of Digital River, Inc. | <a href="http://www.digitalriver.com/" target="_blank">www.digitalriver.com</a></p>
+        <script src="Resources/fireclick.js">
+        </script>
+        <script type="text/javascript">/* <![CDATA[ */
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+/* ]]> */</script>
+        <script type="text/javascript">/* <![CDATA[ */
+try {
+var pageTracker = _gat._getTracker("UA-10899220-1");
+pageTracker._trackPageview();
+} catch(err) {}/* ]]> */</script>
+        <script src="Resources/MasterPages/highlighter.js">
+        </script>
+        <script>/* <![CDATA[ */doSearch();/* ]]> */</script>
+    </body>
+</html>

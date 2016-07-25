@@ -1,0 +1,96 @@
+/*Compare Page*/
+#dr_Compare table#CompareTable {
+width:auto;
+margin:0px;
+padding:0px;
+}
+
+#dr_Compare table#CompareTable th.col0 {
+width:125px;
+padding:0px;
+margin:0px;
+}
+
+#dr_Compare table#CompareTable td.col0,
+#dr_Compare table#CompareTable tr.groupName td {
+padding:4px 0px;
+}
+
+#dr_Compare table#CompareTable th{
+width:200px;
+margin:0px;
+padding:0 0 4px 4px;
+}
+
+#dr_Compare table#CompareTable td.featureTitle {
+font-weight:bold;
+}
+
+#dr_Compare table#CompareTable .dr_regularPrice {
+display:block;
+}
+
+
+
+#compareContainer{
+border:1px solid #c2c2c2;
+height:auto;
+padding:8px;
+margin:10px;
+position:fixed;
+right:0px;
+top:40%;
+background:#efefef;
+display:none;/*REQUIRED*/
+}
+
+#compareSubmitError{
+clear:both;
+float:left;
+margin:10px 0 0; 
+color:#FF0000;
+display:none; /*required*/
+}
+#dr_CategoryProductList .compareItems{
+float:left;
+position:relative;
+height:36px;
+width:36px;
+color:#fff;
+text-align:center;
+background:#848484;
+margin:0 6px 0 0;
+}
+
+#compareSubmit{
+float:right;
+margin:5px 0 0;
+padding:0;
+}
+
+#compareSubmit a{
+display:block;
+height:25px;
+padding:0px;
+}
+
+#dr_CategoryProductList .compareItems a img{
+display:none; /*required*/
+z-index:1001;
+width:15px;
+position:absolute;
+top:-2px;
+left:22px;
+}
+#dr_CategoryProductList .compareItems a:hover img{
+display:block !important;/*required*/
+}
+#dr_CategoryProductList .compareItems img.compareBoxImg{
+z-index:1000;
+border:1px solid #C2C2C2;
+width: 34px;
+height:34px;
+}
+.dr_prodCompare {
+display:none;/*REQUIRED*/
+}

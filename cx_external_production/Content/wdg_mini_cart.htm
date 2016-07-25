@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="help_central.xml" data-mc-path-to-help-system="../" data-mc-conditions="gc_cx_conditions.shared" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Storefront|Widgets|Mini-Cart Widgets" data-mc-ignored-words="www.digitalriver.com;digitalriver.com;digitalriver;gcsupport">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Mini Cart Widget Version 2 </title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="Resources/Stylesheets/gc_cx_stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="body">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix"> </span><span class="MCBreadcrumbsSelf">Storefront</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Widgets</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Mini-Cart Widgets</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Mini Cart Widget</span>
+            </div>
+            <h1><a name="aanchor307"></a>
+                <MadCap:concept term="Widgets;Widget Mini Cart" /><a name="kanchor302"></a>Mini Cart Widget Version 2 </h1>
+            <h2>Mini Cart Widget Overview</h2>
+            <p>The Mini Cart widget shows a mini version of the shopping cart on the page where the JavaScript code is inserted. As a shopper adds and removes products to the shopping cart, the Mini Cart updates to reflect the contents of the cart.</p>
+            <p>You can use CSS to customize the look of the Mini Cart to match the style of your store. By default, the Mini Cart shows the product name, price, number of items in the cart, sub-total, and includes a Checkout button. Depending on how you set up the widget, you can include additional product details such as delivery method or platform.</p>
+            <h3>How Mini Cart Works</h3>
+            <p>When a shopper visits a page with Mini Cart, the loading progress bar displays until the Mini Cart is fully loaded on the page. If the cart is empty, a featured product with a description and image followed by a set of related or recommended products  appears in the Mini Cart area. The featured and related products come from a marketing offer that uses the "SiteMerchandising_EmptyCart" point of promotion (POP). The first product set in the offer becomes the feature; the remaining products become the recommended products shown in the widget. The featured products information is displayed  until a product is added to the cart. </p>
+            <p style="text-align: left;">
+                <img src="Resources/Images/minicart1.jpg" style="margin-left: 5.99976px;margin-top: 2.49984px;margin-right: 6.000469px;margin-bottom: 11.24999px;" />
+            </p>
+            <p>When a product is added to the cart, a process bar indicates that the Mini Cart is updating. When the cart is done loading, the products are shown and a check out button is included so shoppers can complete their purchase from the Mini Cart.</p>
+            <p style="text-align: left;">
+                <img src="Resources/Images/widgets2.jpg" />
+            </p>
+            <h3>Sample JavaScript</h3>
+            <p style="font-family: monospace;">&lt;script type="text/javascript" src="http://store.digitalriver.com/store/storeID/DisplayDRMiniCartJSPage/Version.2/dom.divID"&gt;&lt;/script&gt;</p>
+            <p style="font-weight: bold;">To implement the mini cart widget:</p>
+            <ol>
+                <li value="1">Make sure that a marketing offer has been created that uses the "SiteMerchandising_EmptyCart" POP and has at least one product associated with it. If the offer is set up correctly, selected featured and related products appear when the Mini Cart is empty.</li>
+                <li value="2">Copy the JavaScript below and paste it on the page where you want the widget to appear. You can specify exactly where the widget  appears on the page using either of the following approaches:<ul><li class="disc" value="1">Add the JavaScript in the exact position where you want the widget to appear. In this case, remove <b>domID.divID/</b> from the JavaScript.&#160;</li><li class="disc" value="2">Add the JavaScript anywhere to the page and replace <b>divID</b> with the name/ID of the div where you want the widget to appear. For example: &lt;script type="text/javascript" src="http://store.digitalriver.com/store/storeID/domID.testDiv/DisplayDRMiniCartJSPage/Version.2"&gt;</li></ul></li>
+                <li value="3">Replace the following elements in the JavaScript with the relevant information for your store:<ul><li class="disc" value="1">Replace <b>store.digitalriver.com</b> with your Digital River store domain.</li><li class="disc" value="2">Replace <b>storeID</b> with your store ID.</li></ul></li>
+                <li value="4">Add the optional <b>includeCSS</b> parameter to indicate whether you want to use the default CSS for the Mini Cart or your own CSS hosted on your store. To override the default Mini Cart CSS and use your own CSS, set includeCSS to  <b>no</b> as shown in the following example:&#160;</li>
+            </ol>
+            <p>&lt;script type="text/javascript" src="http://store.digitalriver.com/store/storeID/DisplayDRMiniCartJSPage/Version.2/<b>includeCss.No</b>/domID.testDiv"&gt;&lt;/script&gt;</p>
+            <p>&#160;</p>
+            <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="Widgets" href="javascript:void(0);" data-mc-topics="Digital River Widgets Overview|wdg_about.htm#aanchor306||Mini Cart Widget Version 2 |#aanchor307"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />Related Topics</span></a>
+            </p>
+            <p>&#160;</p>
+        </div>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: center;">&#160;</p>
+        <hr color="#005ba8" width="100%" size="0" align="center" />
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">© 2014 Digital River, Inc. </p>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">Digital River® is a registered trademark of Digital River, Inc. | <a href="http://www.digitalriver.com/" target="_blank">www.digitalriver.com</a></p>
+        <script src="Resources/fireclick.js">
+        </script>
+        <script type="text/javascript">/* <![CDATA[ */
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+/* ]]> */</script>
+        <script type="text/javascript">/* <![CDATA[ */
+try {
+var pageTracker = _gat._getTracker("UA-10899220-1");
+pageTracker._trackPageview();
+} catch(err) {}/* ]]> */</script>
+        <script src="Resources/MasterPages/highlighter.js">
+        </script>
+        <script>/* <![CDATA[ */doSearch();/* ]]> */</script>
+    </body>
+</html>

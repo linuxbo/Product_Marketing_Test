@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="help_central.xml" data-mc-path-to-help-system="../" data-mc-conditions="gc_cx_conditions.shared" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Marketing|Offers and POPs" data-mc-ignored-words="www.digitalriver.com;digitalriver.com;digitalriver;gcsupport">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Troubleshooting Offers</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="Resources/Stylesheets/gc_cx_stylesheet.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="body">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix"> </span><span class="MCBreadcrumbsSelf">Marketing</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Offers and POPs</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Troubleshooting Offers</span>
+            </div>
+            <h1><a name="aanchor365"></a>
+                <MadCap:concept term="Offers" /><a name="kanchor361"></a>Troubleshooting Offers</h1>
+            <p>This topic will help you troubleshoot why your offer isn't working or appearing as you expect.</p>
+            <p class="note_note"><b>Tip</b>:&#160;Don't see what you want here?&#160;Email us at <a href="mailto:technicalpublications@digitalriver.com?subject=What Offer Type to Create Suggestion" target="_blank">technicalpublications@digitalriver.com</a> and tell us what you were hoping to find.</p>
+            <h2>Shoppers can't redeem offer...</h2>
+            <p><b>Problem</b>: The offer isn't triggering even though the order meets the conditions for the offer.</p>
+            <p style="font-weight: bold;">Things to check:</p>
+            <ul>
+                <li value="1"><b>Does the offer have usage limits?</b> Usage limits restrict the number of times an offer can be redeemed  by either all your shoppers or individual shopper. If your offer has <a href="mr_about_usage_controls.htm">usage limits</a>, those limits may have been reached.</li>
+            </ul>
+            <ul>
+                <li value="1"><b>Is the offer active?</b> Offers can set up to be active only during specific dates. Check the <a href="mr_about_start_date_end_date.htm">Start Date and End Date</a> for the offer and make sure the offer hasn't expired. </li>
+            </ul>
+            <ul>
+                <li value="1"><b>Is the offer a bundle?</b> The behavior of bundle offers can seem confusing because of the relationship between products in bundle offers. See <a href="#Troubles" class="selected">Troubleshooting Bundle Offers</a> below.</li>
+            </ul>
+            <ul>
+                <li value="1"><b>Are there locale restrictions on the offer?</b> If the offer is set up for only a few specific locales you should try enabling the offer for all locales and see if that fixes the problem. Conversely, if the offer isn't appearing in the locales you expect, you could try to set up locale restrictions for the offer but then "restrict" the offer to every possible locale. See <a href="mr_about_locale_restrictions.htm" title="" alt="" class="MCXref xref"><b>About Locale Restrictions</b></a> for more about using (or not using)&#160;locale restrictions.</li>
+            </ul>
+            <ul>
+                <li value="1"><b>Are there parent and child products in the offer (is the offer a bundle)?</b> Make sure the parent product is added to the shopping cart first. The order in which parent and child products are added to the shopping cart determine if an offer is triggered correctly or if the offer discount is applied correctly to the shopping cart.</li>
+            </ul>
+            <ul>
+                <li value="1"><b>Is there inventory for the products in the offer?</b>&#160;If the products in the order are out of stock (or if one of the parent product or child products is out of stock) shoppers may not be able to add the products in the offer to the shopping cart or trigger the offer on the store. Make sure the inventory levels for all products in your offer are above zero.</li>
+            </ul>
+            <ul>
+                <li value="1"><b>Are the products in the offer set to be displayed and purchased on your store?</b> There are two settings that affect whether a product can be seen and/or purchased on your store. These settings are seen in the Storefront Settings when creating a product or editing as product as shown below. Make sure all products in the offer (including any parent products or child products) are set to be displayed and purchased on the store.</li>
+            </ul>
+            <p class="nested_p">
+                <img src="Resources/Images/displayable_purchasable1_504x215.jpg" style="width: 504;height: 215;" />
+            </p>
+            <ul>
+                <li value="1"><b>Is the <a href="eds_about_eds.htm" style="font-weight: bold;">Extended Download Service (EDS)</a>&#160;part of a bundle?</b>&#160;EDS&#160;can only exist once in the shopping cart. If a shopper tries to add a bundle with EDS&#160;to the cart when another bundle already exists with EDS&#160;(or EDS&#160;exists as a non-bundle product)&#160;the bundle will not be triggered or added to the cart. </li>
+            </ul>
+            <h2>Offer isn't appearing correctly on store...</h2>
+            <p><b>Problem</b>: The offer isn't appearing on the store (or not appearing as you'd expect it to). </p>
+            <p style="font-weight: bold;">Things to check:</p>
+            <ul>
+                <li value="1"><b>Is the offer deployed?</b> Offers must be <a href="mr_deploy_offer.htm">deployed</a> to be seen or redeemed on a site. </li>
+            </ul>
+            <ul>
+                <li value="1"><b>Is the offer active?</b> Offers can set up to be active only during specific dates. Check the <a href="mr_about_start_date_end_date.htm">Start Date and End Date</a> for the offer and make sure the offer hasn't expired. </li>
+            </ul>
+            <ul>
+                <li value="1"><b>Are you using the right POP for the offer?</b> Some POPs display offers on your store, some do not. Make sure you are using the right POP for how you want the offer to appear on your store. One way to test if the POP is affecting your offer is to modify the offer to use another POP&#160;(or to not use a POP at all) and see the results. If you have any questions about the POPs on use on your site, contact you CMM&#160;or Store Operations team. </li>
+                <li value="2"><b>Are the products in the offer in the default catalog for the site?</b> Every site has one, default catalog. When you create an offer, it is possible to select a product that is not in the catalog for the currently selected site. This would cause the offer to not appear on the storefront for the site because the store will only show products in its default catalog.</li>
+                <li value="3"><b>Is the display content set up correctly?</b> Display content can affect how an offer appears on a store, particularly when the offer uses a POP that uses the display content to show the offer on your store. Double-check what you have entered for the display content especially the images, header, and footer. Try changing what is entered for various parts of the display content and see the results.</li>
+            </ul>
+            <ul>
+                <li value="1"><b>Are there locale restrictions on the offer?</b> If the offer is set up for only a few specific locales you should try enabling the offer for all locales and see if that fixes the problem. Conversely, if the offer isn't appearing in the locales you expect, you could try to set up locale restrictions for the offer but then "restrict" the offer to every possible locale. See <a href="mr_about_locale_restrictions.htm" title="" alt="" class="MCXref xref"><b>About Locale Restrictions</b></a> for more about using (or not using)&#160;locale restrictions.</li>
+            </ul>
+            <h2>Offer isn't discounting as&#160;expected...</h2>
+            <p><b>Problem</b>: The discount the shopper is getting isn't the discount you set up for the offer.</p>
+            <p style="font-weight: bold;">Things to check:</p>
+            <ul>
+                <li value="1"><b>Is another offer being triggered instead of the one you expect?</b> When there are multiple offers running on a site, the offer that provides the best discount will always be used. </li>
+                <li value="2"><b>Is the product in the shopping cart the exact same product as the one in the offer?</b> Sometimes products get confused with one another if the name is similar.</li>
+                <li value="3"><b>Is the pricing or price list setup (including fees and VAT) affecting the price?</b> Sometimes it is not the offer setup that is affecting the discount of a product, but the pricing defined for the product or the pricing defined in the price list the product is using. Double-check all the price lists to verify the pricing is set up correctly in each price lists (generally speaking, prices should be the same in every price list for a product). </li>
+            </ul>
+            <h1><a name="Troubles"></a>Troubleshooting Bundle Offers</h1>
+            <p>The relationship between products in an offer (the <a href="mr_about_bundle_policy.htm">bundle policy</a>) can cause some strange behavior when a shopper tries to change the quantity of a product or remove a product that was automatically added to the shopping cart because of a bundle offer.&#160;</p>
+            <p>If your bundle offer isn't behaving as you expect (or the shopper is seeing odd behavior that appears to be because of bundle offer) use the information below to help you troubleshoot. </p>
+            <p style="font-weight: bold;">Troubleshooting odd behavior of  bundle offers:</p>
+            <ul>
+                <li value="1">The order in which the products are added to the shopping cart dictates whether child products in a bundle offer can be purchased alone. For example if you have a bundle offer and you add the child product to the cart before the parent product, the offer will not trigger when you add the parent product to the cart (the parent product in a bundle offer must always be added to the shopping cart first).</li>
+                <li value="2">Running multiple bundle offers on your store can cause some unexpected behavior. We recommend you limit the number of bundle offers (especially the "All Products Bundle" type, or bundles with the Extended Download Service/EDS)&#160;on your store as much as possible and retire bundle offers as soon as they are no longer needed.</li>
+                <li value="3">If a bundle includes the <a href="eds_about_eds.htm">Extended Download Service (EDS)</a>&#160;the shopper will not be able to add another bundle to the cart that also includes EDS. EDS&#160;can never exist in the cart more than once (only a single quantity or line item of EDS&#160;can be present in the cart at any time). </li>
+                <li value="4">The "All Products Bundle" offer type can cause some unexpected behavior if the shopper continues to add products to the shopping cart that are discounted by the bundle offer. If you are having trouble with your all products bundles, please contact your Store Operations team for assistance.</li>
+                <li value="5">Make sure the inventory levels for both the parent and child products is positive (not zero). If either of the products is out of stock, the bundle offer will not work as expected (shoppers may not even be able to add the bundle to the shopping cart). </li>
+                <li value="6">The "allow duplicate line items" setting can affect whether or not shoppers can purchase parent or child products in addition to the bundle in which they belong. If the duplicate line items setting is not enabled for a site, shoppers can only purchase a child product from a bundle if they add that child product to the shopping cart before they add the parent and trigger the offer. </li>
+            </ul>
+            <p class="note_note"><b>Note</b>:&#160;If a store does not have the "allow duplicate line items" setting enabled for a site, and a shopper adds a bundle with the "tight" policy to the shopping cart and then adds a bundle with the "semi-tight" policy that contains a product from the tight bundle, only the non-shared products in the semi-tight bundle will be added to the cart. For example, bundle #1 (the tight bundle)&#160;has products A and B. Bundle #2 (the semi-tight bundle) has products B and C. When the shopper attempts to add bundle #2 to the cart, only product C will be added because it already exists in the cart from bundle #1.</p>
+            <p>&#160;</p>
+            <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="Offers" href="javascript:void(0);" data-mc-topics="About Bundle Offers|mr_about_bundle_offers.htm#aanchor323||About Custom&#160;Bundles|mr_about_bundle_offers_custom_bundles.htm#aanchor346||About Import and Export Offers|mr_import_export_about.htm#aanchor352||About Locale Restrictions|mr_about_locale_restrictions.htm#aanchor335||About Localizing Offers|lcz_localize_offers_about.htm#aanchor88||About Marketing Offers|mr_offers_about.htm#aanchor503||About Offer Availability|mr_about_offer_availability.htm#aanchor334||About Offer Controls&#160;|mr_offer_controls_about.htm#aanchor507||About Offer Description in Cart|mr_about_offer_description_in_cart.htm#aanchor337||About Offer Discounts|mr_about_offer_discounts.htm#aanchor491||About Offer Discounts|mr_offer_discounts_about.htm#aanchor508||About Offer Display Content|mr_about_offer_display_content.htm#aanchor336||About Offer Display Content|mr_offer_display_content_about.htm#aanchor509||About Offer Statuses|mr_about_offer_status.htm#aanchor321||About Offer Triggers: Always Triggered|mr_about_offer_triggers_always_triggered.htm#aanchor326||About Offer Triggers: Always Triggered|mr_offer_triggers_always_triggered_about.htm#aanchor511||About Offer Triggers: Coupon Code|mr_about_offer_triggers_coupon_code.htm#aanchor327||About Offer Triggers: Coupon Code|mr_offer_triggers_coupon_code_about.htm#aanchor512||About Offer Triggers: Promotional URL|mr_about_offer_triggers_promo_url.htm#aanchor328||About Offer Triggers: Promotional URL|mr_offer_triggers_promo_url_about.htm#aanchor513||About Offer Triggers:&#160;Site Test|mr_about_offer_triggers_site_test.htm#aanchor329||About Offer Triggers:&#160;Site Test|mr_offer_triggers_site_test_about.htm#aanchor514||About Offer Triggers|mr_offer_triggers_about.htm#aanchor510||About Offer Types|mr_about_offer_types.htm#aanchor492||About Points of Promotion (POPs)|mr_about_pops.htm#aanchor338||About Product Offers|mr_about_product_offers.htm#aanchor322||About Product Offers|mr_product_offers_about.htm#aanchor518||About Restrict Deployment|mr_about_restrict_deployment.htm#aanchor333||About Shipping Offers|mr_about_shipping_offers.htm#aanchor325||About Shipping Offers|mr_shipping_offers_about.htm#aanchor519||About Start Date and End Date (Expiration)|mr_about_start_date_end_date.htm#aanchor331||About Supported Locales|mr_about_supported_locales.htm#aanchor330||About the Create Offer Wizard|mr_offer_wizard_about.htm#aanchor515||About Usage Controls|mr_about_usage_controls.htm#aanchor332||Configuring Offer Types|mr_configure_offer_types.htm#aanchor363||Copying Offers|mr_copy_offer.htm#aanchor359||Creating and Editing Shipping Destination Discounts|mr_create_edit_shipping_offer6.htm#aanchor498||Creating and Editing Shipping Method Discounts|mr_create_edit_shipping_offer4.htm#aanchor496||Creating and Editing Shipping Order Value Discounts|mr_create_edit_shipping_offer5.htm#aanchor497||Creating Coupon Code Offers|mr_create_offer_coupon_code.htm#aanchor348||Creating Marketing Offers|mr_create_edit_offer.htm#aanchor341||Creating Mystery Discount Offers|mr_create_offer_mystery_discount.htm#aanchor342||Creating Shipping Offers for Individual Products|mr_create_edit_shipping_offer1.htm#aanchor493||Creating Shipping Offers for Product Quantity|mr_create_edit_shipping_offer3.htm#aanchor495||Creating Shipping Offers When an Order Contains Specific Products|mr_create_edit_shipping_offer2.htm#aanchor494||Creating Tiered Discounts|mr_create_offer_tiers.htm#aanchor499||Deploying Offers|mr_deploy_offer.htm#aanchor360||Entering the Localized Display Content|lcz_localize_offers_display_content.htm#aanchor90||Exporting Offers|mr_import_export_offers_export.htm#aanchor353||How Conflicting Offers are Treated|mr_how_conflicting_offers_are_treated.htm#aanchor362||How Offer Content Copies Across Locales|lcz_localize_offers_how_offer_content_copies.htm#aanchor89||How Offers Behave on Your Store|mr_how_offers_behave.htm#aanchor500||How Offers Can Be Used|mr_how_offers_can_be_used.htm#aanchor501||How to Get Images for Offer and POPs|mr_how_to_get_images_for_pops.htm#aanchor502||Importing Offers|mr_import_export_offers_import.htm#aanchor355||Offer and POP Examples|mr_offer_and_pop_examples.htm#aanchor505||Offer Attributes|mr_offer_attributes.htm#aanchor506||Offer Types and Test Types|so_offer_and_test_types.htm#aanchor389||Offers and Social Media|mr_about_social_media_offers.htm#aanchor351||Offers for Purchase Plans|mr_about_purchase_plan_offers.htm#aanchor350||Point of Promotion (POP) Types|mr_about_pops_types.htm#aanchor339||Point of Promotion (POP) Types|mr_pops_types.htm#aanchor516||Popular Offer and POP Setups|mr_popular_pop_and_offer_setups.htm#aanchor517||Previewing Offers|mr_preview_offer.htm#aanchor357||Retiring Offers|mr_retire_offer.htm#aanchor361||Selecting a Default Currency|lcz_localize_offers_default_currency.htm#aanchor91||Setting Up the Supported Locales|lcz_localize_offers_supported_locales.htm#aanchor92||Things to Consider Before Creating an Offer|mr_before_you_create_an_offer.htm#aanchor340||Tips for Using the Spreadsheets|mr_import_export_spreadsheet_tips.htm#aanchor356||Troubleshooting Offers|#aanchor365||Types of Offers You Can Create|mr_offers_types.htm#aanchor504||Using Blank Spreadsheets to Create New Offers|mr_import_export_create_offers.htm#aanchor354||Using the Wait Don’t Leave and First Time Visitor Pop-Ups|mr_using_wdl_and_ftv_pops.htm#aanchor520||Viewing Coupon Code Usage for Offers|mr_viewing_code_usage_for_offers.htm#aanchor349||Viewing Offer Performance|mr_view_offer_performance.htm#aanchor358"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />Related Topics</span></a>
+            </p>
+            <p>&#160;</p>
+        </div>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: center;">&#160;</p>
+        <hr color="#005ba8" width="100%" size="0" align="center" />
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">© 2014 Digital River, Inc. </p>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">Digital River® is a registered trademark of Digital River, Inc. | <a href="http://www.digitalriver.com/" target="_blank">www.digitalriver.com</a></p>
+        <script src="Resources/fireclick.js">
+        </script>
+        <script type="text/javascript">/* <![CDATA[ */
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+/* ]]> */</script>
+        <script type="text/javascript">/* <![CDATA[ */
+try {
+var pageTracker = _gat._getTracker("UA-10899220-1");
+pageTracker._trackPageview();
+} catch(err) {}/* ]]> */</script>
+        <script src="Resources/MasterPages/highlighter.js">
+        </script>
+        <script>/* <![CDATA[ */doSearch();/* ]]> */</script>
+    </body>
+</html>

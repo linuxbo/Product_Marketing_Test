@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="help_central.xml" data-mc-path-to-help-system="../" data-mc-conditions="gc_cx_conditions.shared" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Catalog|Subscriptions|Landing Page" data-mc-ignored-words="www.digitalriver.com;digitalriver.com;digitalriver;gcsupport">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Creating Links to the Landing Page</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="Resources/Stylesheets/gc_cx_stylesheet.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/gc_cx_tablestyles.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/for_dropdowntext.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="body">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix"> </span><span class="MCBreadcrumbsSelf">Catalog</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Subscriptions</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Landing Page</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Creating Links to the Landing Page</span>
+            </div>
+            <h1><a name="aanchor198"></a>
+                <MadCap:concept term="Subscriptions;Subscription Landing Page" /><a name="kanchor193"></a>Creating Links to the Landing Page</h1>
+            <p>If needed, you can create a link to direct your subscription shoppers to the subscriptions landing page where they can view and manage their subscription(s). The link will direct the shopper to a page specific to the task you want them to perform (such as manually renew their subscription, update their billing information, and so on).</p>
+            <h2>How Landing Page Links are Structured</h2>
+            <p>Links to the subscription landing page contain the following elements.</p>
+            <table class="TableStyle-gc_cx_tablestyles" style="mc-table-style: url('Resources/TableStyles/gc_cx_tablestyles.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">Parameter</th>
+                        <th class="HeadE-Column1-Header1">Value</th>
+                        <th class="HeadD-Column1-Header1">Required?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1"><span style="color: #ff0000;">SiteID</span>
+                        </td>
+                        <td class="BodyE-Column1-Body1">Your site ID.</td>
+                        <td class="BodyD-Column1-Body1">Yes</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1"><span style="color: #0000ff;">Action</span>
+                        </td>
+                        <td class="BodyE-Column1-Body1">"DisplaySelfServiceSubscriptionLandingPage"</td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Yes</p>
+                            <p>This value is the same in all links, regardless of what you are creating the link to do.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1"><span style="color: #008000;">SubscriptionID</span>
+                        </td>
+                        <td class="BodyE-Column1-Body1">The ID&#160;of the subscription you want the shopper to act upon.</td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>No, but recommended. </p>
+                            <p>If the shopper has multiple subscriptions and this is not included in the link, the shopper will have to first select the subscription they want to act on.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1"><span style="color: #ff7900;">FutureAction</span>
+                        </td>
+                        <td class="BodyE-Column1-Body1">The action you want the shopper to perform once they login on the landing page.</td>
+                        <td class="BodyD-Column1-Body1">Yes</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1"><span style="color: #9400d3;">AcceptAction</span>
+                        </td>
+                        <td class="BodyB-Column1-Body1">The action that is performed when the user accepts a change to their subscription.</td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Yes </p>
+                            <p>Only required for four actions, not required for all.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Sample Link</h2>
+            <p>The following sample link shows how all the parameters are used. The color coding in the sample below correspond to the colors used in the table above. </p>
+            <p>You can copy the sample below and then change the parameters as needed to define your own link. Keep in mind that URLs should not include any spaces (if you copy the text below, it may contain line breaks or spaces, which should be removed).</p>
+            <table class="TableStyle-for_dropdowntext" style="mc-table-style: url('Resources/TableStyles/for_dropdowntext.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyA-Column1-Body1">
+                            <p style="font-family: 'Courier New';">http://store.digitalriver.com/store?<span style="color: #ff0000;">SiteID=drsubano</span><br /><span style="color: #0000ff;">&amp;Action=DisplaySelfServiceSubscriptionLandingPage</span><span style="color: #008000;">&amp;subscriptionID=12345689</span><br /><span style="color: #ff7900;">&amp;futureAction=DisplaySelfServiceSubscriptionConfirmationActionPage</span><span style="color: #9400d3;">&amp;acceptAction=StopAutoRenew</span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li value="1">The first part of the link ("store.digitalriver.com") is your store's domain (or virtual domain). Most stores use "store.digitalriver.com" as their domain, however some stores have opted to use a virtual domain. Use the same domain for all links you create to the landing page. Make sure you include the second black part ("/store?") in addition to the site ID&#160;(the red part discussed below) or the link will not work.</li>
+                <li value="2">The <span style="color: #ff0000;">red part</span> is the site ID&#160;on which the shopper purchased the subscription. When you create your own link, replace <span style="font-family: 'Courier New';">drsubano</span> with your site ID.</li>
+                <li value="3">The <span style="color: #0000ff;">blue part</span> is the same in every link and will not change regardless of the link you are creating. This parameter indicates you want the link to open the subscription landing page. Once the shopper logs on to the landing page, they are directed to a page that corresponds with <span style="font-family: monospace;">FutureAction</span> (the action the shopper will actually take). </li>
+                <li value="4">The <span style="color: #008000;">green part</span> is the ID&#160;of the subscription you want the shopper to act upon. When you create your own link, replace <span style="font-family: monospace;">12345689</span> with the ID&#160;of the shopper's subscription.</li>
+                <li value="5">The <span style="color: #ff7900;">orange part</span> is the action you want the shopper to take once they log on to the landing page. When you create your own link, use the <span style="font-family: monospace;">FutureAction</span> you want the shopper to take from the table below.</li>
+                <li value="6">The <span style="color: #9400d3;">purple part</span> is only required if you use one of four <span style="font-family: monospace;">FutureAction</span> in the orange part. Use the table below to determine if the <span style="font-family: monospace;">FutureAction</span> you want to use requires an <span style="font-family: monospace;">AcceptAction</span>.</li>
+            </ul>
+            <h2>FutureAction</h2>
+            <p>The following table outlines the values you can use for the <span style="font-family: monospace;">FutureAction</span> parameter in your link. The <span style="font-family: monospace;">FutureAction</span> is the actual action you want the shopper to take, such as manually renewing their subscription.</p>
+            <table class="TableStyle-gc_cx_tablestyles" style="mc-table-style: url('Resources/TableStyles/gc_cx_tablestyles.css');margin-left: 0;margin-right: auto;caption-side: top;" cellspacing="0">
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">Task the Shopper Will Perform</th>
+                        <th class="HeadE-Column1-Header1"><span style="color: #ff7900;">FutureAction</span> to Use</th>
+                        <th class="HeadD-Column1-Header1">Requires <span style="color: #9400d3;">AcceptAction</span>?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">View subscription history</td>
+                        <td class="BodyE-Column1-Body1" style="font-family: monospace;">DisplaySelfServiceSubscriptionHistoryListPage</td>
+                        <td class="BodyD-Column1-Body1">No.</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">Manually renew their subscription</td>
+                        <td class="BodyE-Column1-Body1" style="font-family: monospace;">AddItemToRequisitionForManualRenewal</td>
+                        <td class="BodyD-Column1-Body1">No.</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">Edit their payment information</td>
+                        <td class="BodyE-Column1-Body1" style="font-family: monospace;">DisplayAddEditPaymentPage</td>
+                        <td class="BodyD-Column1-Body1">No.</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">Edit their shipping address</td>
+                        <td class="BodyE-Column1-Body1" style="font-family: monospace;">DisplayAddEditAddressPage </td>
+                        <td class="BodyD-Column1-Body1">No.</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">Upgrade their subscription</td>
+                        <td class="BodyE-Column1-Body1" style="font-family: monospace;">DisplaySelfServiceSubscriptionUpgradePage </td>
+                        <td class="BodyD-Column1-Body1">No.</td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">Increase the subscription quantity</td>
+                        <td class="BodyE-Column1-Body1" style="font-family: monospace;">DisplaySelfServiceSubscriptionUpdateQuantityPage </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Yes.</p><pre xml:space="preserve">IncreaseSubscriptionQuantity </pre>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">Decrease the subscription quantity</td>
+                        <td class="BodyE-Column1-Body1" style="font-family: monospace;">DisplaySelfServiceSubscriptionUpdateQuantityPage </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Yes.</p>
+                            <p style="font-family: monospace;">DecreaseSubscriptionQuantity</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">Stop automatic renewal</td>
+                        <td class="BodyE-Column1-Body1" style="font-family: monospace;">DisplaySelfServiceSubscriptionConfirmationActionPage</td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Yes.</p>
+                            <p style="font-family: monospace;">StopAutoRenew </p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">Cancel the subscription</td>
+                        <td class="BodyB-Column1-Body1" style="font-family: monospace;">DisplaySelfServiceSubscriptionConfirmationActionPage</td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Yes.</p>
+                            <p style="font-family: monospace;">CancelSubscription </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&#160;</p>
+            <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="Subscription Landing Page" href="javascript:void(0);" data-mc-topics="About the Subscription Landing Page|subs_landing_page_about.htm#aanchor197||Creating Links to the Landing Page|#aanchor198"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />Related Topics</span></a>
+            </p>
+            <p>&#160;</p>
+        </div>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: center;">&#160;</p>
+        <hr color="#005ba8" width="100%" size="0" align="center" />
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">© 2014 Digital River, Inc. </p>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">Digital River® is a registered trademark of Digital River, Inc. | <a href="http://www.digitalriver.com/" target="_blank">www.digitalriver.com</a></p>
+        <script src="Resources/fireclick.js">
+        </script>
+        <script type="text/javascript">/* <![CDATA[ */
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+/* ]]> */</script>
+        <script type="text/javascript">/* <![CDATA[ */
+try {
+var pageTracker = _gat._getTracker("UA-10899220-1");
+pageTracker._trackPageview();
+} catch(err) {}/* ]]> */</script>
+        <script src="Resources/MasterPages/highlighter.js">
+        </script>
+        <script>/* <![CDATA[ */doSearch();/* ]]> */</script>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="help_central.xml" data-mc-path-to-help-system="../" data-mc-conditions="gc_cx_conditions.shared" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Catalog|Subscriptions|Reports|Business Navigator Reports" data-mc-ignored-words="www.digitalriver.com;digitalriver.com;digitalriver;gcsupport">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Failed Payment Details</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="Resources/Stylesheets/gc_cx_stylesheet.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/gc_cx_tablestyles.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="body">
+            <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix"> </span><span class="MCBreadcrumbsSelf">Catalog</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Subscriptions</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Reports</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Business Navigator Reports</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Failed Payment Details</span>
+            </div>
+            <h1><a name="aanchor201"></a>
+                <MadCap:concept term="Subscriptions;Business Navigator;Subscription Reports" /><a name="kanchor196"></a>Failed Payment Details</h1>
+            <p>The Failed Payment Details report shows detailed information about failed attempts to renew a subscription. Most attempts to renew an auto-renew subscriptions fail because of a problem with the payment authorization.</p>
+            <p>Depending on how you have a product set up, <span class="gc_cx_variablesPlatformName3" data-mc-conditions="gc_cx_conditions.cx_external">(Undefined variable: gc_cx_variables.PlatformName3)</span> will make one to three attempts to renew an automatic renewal subscription. When an attempt fails, the shopper is sent the  "User Subscription Auto Renewal Failure event" email which  prompts the shopper to manually renew or update their payment information. </p>
+            <p>Depending on the date range of a report, a subscription could appear in the report multiple times (once for each failed renewal attempt within the date range of the report). </p>
+            <p>An entry in this  report does <u>not</u> mean that the subscription was not renewed. A  subsequent attempt could have been successful or the shopper could have  manually renewed.</p>
+            <p class="note_note"><b>Note</b>:&#160;Because <span class="gc_cx_variablesPlatformName3" data-mc-conditions="gc_cx_conditions.cx_external">(Undefined variable: gc_cx_variables.PlatformName3)</span> attempts to renew a subscription multiple times (and sends a notification to shoppers when an attempt fails to encourage them to update their billing info or renew manually) this report is not ideal when you want to analyze renewal rates or impact on revenue. To get a accurate picture of renewal rates for your subscription we recommend you use the <a href="subs_reports_cancel_details.htm">Cancel Details</a> report. </p>
+            <h2>Fields in the Report</h2>
+            <table style="mc-table-style: url('Resources/TableStyles/gc_cx_tablestyles.css');margin-left: 0;margin-right: auto;" class="TableStyle-gc_cx_tablestyles" cellspacing="0">
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">Field</th>
+                        <th class="HeadD-Column1-Header1">Definition/Meaning</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">Payment Attempt #</td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>The number of attempts made to auto-renew a subscription. The number of attempts that are made is determined by an option in the subscription product setup. </p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">Payment Attempt Failure Code</td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Code that indicates why a renewal failed. Digital River uses Paymentech codes to indicate why a renewal failed. For information about the Paymentech codes, see the following:</p>
+                            <ul>
+                                <li class="table" value="1"><a href="http://chasepaymentechsales.com/portal/server.pt/gateway/PTARGS_0_2_422_0_0_18/DebitResponseCodes.pdf">Codes for Debit Cards</a>
+                                </li>
+                                <li class="table" value="2"><a href="http://chasepaymentechsales.com/portal/server.pt/gateway/PTARGS_0_2_1445_0_0_18/SVResponseCodes091008.pdf">Codes for Stored Value Cards</a>
+                                </li>
+                                <li class="table" value="3"><a href="http://chasepaymentechsales.com/portal/server.pt/gateway/PTARGS_0_2_419_0_0_18/CCResponseCodes.pdf">Codes for Credit Cards</a><a href="http://chasepaymentechsales.com/portal/server.pt/gateway/PTARGS_0_2_419_0_0_18/CCResponseCodes.pdf" rel="nofollow">&#160;</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">Payment Attempt Reason</td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Additional context information received directly from the payment  providers. It varies by payment provider and the contents of this field  is not defined by Digital River nor does DR guarantee the content of  this field. This field is provided as is with the intent that it might  provide additional context from the provider if available.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&#160;</p>
+            <p><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="Subscriptions" href="javascript:void(0);" data-mc-topics="About Increasing or Decreasing Subscription Quantity|subs_increase_descrease_quantity_about.htm#aanchor203||About Subscription Plans|subs_subscription_plans_about.htm#aanchor182||About Subscription Reports|subs_reports_about.htm#aanchor199||About Subscription Shopper Self-Service Options|subs_shopper_self_service.htm#aanchor202||About Subscription Upgrades and Downgrades|subs_upgrade_downgrade_about.htm#aanchor179||About Subscriptions|subs_about.htm#aanchor175||About the Subscription Landing Page|subs_landing_page_about.htm#aanchor197||About the Subscription Options|prd_product_options_subscription_about.htm#aanchor153||Cancel Details|subs_reports_cancel_details.htm#aanchor200||Configuring Site Settings: Subscriptions|sa_features_subscriptions.htm#aanchor51||Creating a Subscription Product|subs_create_product.htm#aanchor183||Creating Links to the Landing Page|subs_landing_page_create_link.htm#aanchor198||Failed Payment Details|#aanchor201||Offer Subscription Controls|subs_offer_settings.htm#aanchor196||Setting Subscription Site Settings|subs_site_settings.htm#aanchor181||Subscription Activation|subs_product_options_activation.htm#aanchor188||Subscription Attributes|prd_product_options_subscription_attributes.htm#aanchor154||Subscription Auto Renew|subs_product_options_auto_renew.htm#aanchor190||Subscription Bill Auto Renew Prior to Expiration|subs_product_options_bill_auto_renew_prior_to_expiration.htm#aanchor187||Subscription Cancellations|subs_cancels.htm#aanchor178||Subscription Digital Rights|subs_product_options_digital_rights.htm#aanchor192||Subscription Electronic Fulfillment Notice|subs_product_options_electronic_fulfillment_notice.htm#aanchor193||Subscription Free Extension|subs_product_options_free_extension.htm#aanchor186||Subscription Grace Period|subs_product_options_grace_period.htm#aanchor185||Subscription Recurrence|subs_product_options_recurrence.htm#aanchor184||Subscription Renewal Pricing|subs_renewal_pricing.htm#aanchor177||Subscription Renewals|subs_renewal.htm#aanchor176||Subscription Shopper Notifications|subs_product_options_notifications.htm#aanchor191||Subscription Transfer Products|subs_product_options_transfer_products.htm#aanchor194||Subscription Trial Period|subs_product_options_trial_period.htm#aanchor189||Subscription Upgrade and Downgrade Products|subs_product_options_upgrade_downgrade_products.htm#aanchor195||Subscriptions: Customer Service Save|subs_cs_save.htm#aanchor180"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="16" alt="Concept Link Icon" />Related Topics</span></a>
+            </p>
+            <p>&#160;</p>
+        </div>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: center;">&#160;</p>
+        <hr color="#005ba8" width="100%" size="0" align="center" />
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">© 2014 Digital River, Inc. </p>
+        <p style="font-size: 8pt;font-family: Calibri;text-align: left;">Digital River® is a registered trademark of Digital River, Inc. | <a href="http://www.digitalriver.com/" target="_blank">www.digitalriver.com</a></p>
+        <script src="Resources/fireclick.js">
+        </script>
+        <script type="text/javascript">/* <![CDATA[ */
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+/* ]]> */</script>
+        <script type="text/javascript">/* <![CDATA[ */
+try {
+var pageTracker = _gat._getTracker("UA-10899220-1");
+pageTracker._trackPageview();
+} catch(err) {}/* ]]> */</script>
+        <script src="Resources/MasterPages/highlighter.js">
+        </script>
+        <script>/* <![CDATA[ */doSearch();/* ]]> */</script>
+    </body>
+</html>
